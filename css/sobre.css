@@ -1,0 +1,129 @@
+
+/* container da página */
+.sobre-page {
+  padding: 40px 20px 60px;
+}
+
+/* HERO */
+.sobre-hero {
+  max-width: 900px;
+  margin: 40px auto 60px;
+  text-align: center;
+  background: linear-gradient(135deg, #ffe0d6, #ffd6ea);
+  padding: 32px 24px;
+  border-radius: 20px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+}
+
+.sobre-hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #4b2e2e;
+}
+
+.sobre-hero p {
+  font-size: 16px;
+  color: #6b4a4a;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* FOTO + TEXTO LADO A LADO */
+.sobre-card-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  background: #fff5ec;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  margin-bottom: 60px;
+}
+
+/* foto circular */
+.sobre-foto {
+  flex: 1 1 260px;
+  display: flex;
+  justify-content: center;
+}
+
+.sobre-foto img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #ffd28f;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+}
+
+/* texto */
+.sobre-texto {
+  flex: 2 1 320px;
+}
+
+.sobre-texto h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+  color: #4b2e2e;
+}
+
+.sobre-texto p {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #6b4a4a;
+  line-height: 1.6;
+}
+
+.sobre-texto ul {
+  margin-top: 12px;
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+/* DIFERENCIAIS */
+.sobre-valores {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.sobre-valores h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.sobre-valores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.sobre-card {
+  background: #fdf5ee;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.sobre-card h3 {
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .sobre-hero {
+    margin: 20px auto 40px;
+  }
+
+  .sobre-foto img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .sobre-card-container {
+    padding: 20px;
+  }
+}

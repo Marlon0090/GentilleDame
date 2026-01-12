@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gentille Dame</title>
+
+  <!-- FAVICON (logo na aba) -->
+  <link rel="icon" type="image/png" href="img/imgdame.png" />
+
+  <!-- Fonte Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div class="preloader">
+    <div class="logo-loading">
+      <img src="img/logo.png" alt="Gentille Dame" />
+    </div>
+    <div class="loader-circle"></div>
+    <div class="loader-text">CARREGANDO</div>
+  </div>
+  
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <img src="img/logo 2.png" alt="Gentille Dame" />
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="session/sobre.html">Sobre</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="https://app.cardapioweb.com/gentille_dame" target="_blank">Delivery</a></li>
+        <li><a href="https://wa.me/5515996675519" target="_blank" rel="noopener">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SLIDER -->
+  <section class="slider-container">
+
+    <!-- BOTÕES -->
+    <button class="slider-btn prev" id="prevBtn">❮</button>
+    <button class="slider-btn next" id="nextBtn">❯</button>
+
+    <div class="slider" id="slider">
+      <div class="slide" style="background-image: url('img/Natal com sabor de elegância (4).png')"></div>
+      <div class="slide" style="background-image: url('img/Natal com sabor de elegância (2).png');"></div>
+      <div class="slide" style="background-image: url('img/Natal com sabor de elegância.png');"></div>
+    </div>
+
+    <!-- INDICADORES -->
+    <div class="slider-indicators" id="indicators"></div>
+
+  </section>
+
+  <!-- PRODUTOS -->
+  <section class="produtos" id="produtos">
+    <h2>Conheça nossos sabores</h2>
+    <p>Doces finos, bolos especiais e experiências pensadas para momentos inesquecíveis.</p>
+
+    <!-- GRUPO ESPECIAL – NATAL 🎄 -->
+    <div class="grupo-produto">
+      <h3 class="titulo-grupo">Cardápio de Natal</h3>
+
+      <div class="grid-produtos">
+
+        <div class="card card-natal">
+          <!-- fundo do card -->
+          <img class="bg-natal" src="img/fundo-natal.jpg" alt="Fundo Natalino">
+
+          <!-- conteúdo por cima -->
+          <div class="card-content">
+            <img src="img/natal (1).jpg" alt="Cesta Guirlanda Brownie">
+            <h4 class="produto-nome">Cesta Guirlanda Brownie</h4>
+            <a href="https://app.cardapioweb.com/gentille_dame/categoria/375846" target="_blank" class="btn-cardapio">Ver cardápio</a>
+          </div>
+        </div>
+
+        <div class="card card-natal">
+          <img class="bg-natal" src="img/fundo-natal.jpg" alt="Fundo Natalino">
+          <div class="card-content">
+            <img src="img/natal (2).jpg" alt="Chocotone Camafeu">
+            <h4 class="produto-nome">Chocotone - Camafeu</h4>
+            <a href="https://app.cardapioweb.com/gentille_dame/categoria/375846" target="_blank" class="btn-cardapio">Ver cardápio</a>
+          </div>
+        </div>
+
+        <div class="card card-natal">
+          <img class="bg-natal" src="img/fundo-natal.jpg" alt="Fundo Natalino">
+          <div class="card-content">
+            <img src="img/natal (3).jpg" alt="Chocotone Ninho c/ Nutella">
+            <h4 class="produto-nome">Ninho c/ Nutella</h4>
+            <a href="https://app.cardapioweb.com/gentille_dame/categoria/375846" target="_blank" class="btn-cardapio">Ver cardápio</a>
+          </div>
+        </div>
+
+        <div class="card card-natal">
+          <img class="bg-natal" src="img/fundo-natal.jpg" alt="Fundo Natalino">
+          <div class="card-content">
+            <img src="img/natal (4).jpg" alt="Mini Confeiteiro">
+            <h4 class="produto-nome">Mini Confeiteiro</h4>
+            <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio">Ver cardápio</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- BOLOS -->
+    <div class="grupo-produto">
+      <h3 class="titulo-grupo">Bolos</h3>
+      <div class="grid-produtos">
+        <div class="card">
+          <img src="img/bolo (1).HEIC" />
+          <h4 class="produto-nome">Bolo Tradicional</h4>
+          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio">Ver cardápio</a>
+        </div>
+
+        <div class="card">
+          <img src="img/bolo (1).JPG" />
+          <h4 class="produto-nome">Bolo Premium</h4>
+          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio">Ver cardápio</a>
+        </div>
+
+        <div class="card">
+          <img src="img/bolo pao de mel.jpeg" />
+          <h4 class="produto-nome">Bolo Pão de Mel</h4>
+          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio">Ver cardápio</a>
+        </div>
+
+        <div class="card">
+          <img src="img/bolo5.jpg" />
+          <h4 class="produto-nome">Bolo Mêsversario</h4>
+          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio">Ver cardápio</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONES -->
+    <div class="grupo-produto">
+      <h3 class="titulo-grupo">Cones</h3>
+      <div class="grid-produtos">
+        
+        <div class="card">
+          <img src="img/cone ferrero.jpg" />
+          <h4 class="produto-nome">Cone Ferrero</h4>
+          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio">Ver cardápio</a>
+        </div>
+
+        <div class="card">
+          <img src="img/cone rafaelo.jpg" />
+          <h4 class="produto-nome">Cone Raffaelo</h4>
+          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio">Ver cardápio</a>
+        </div>
+
+        <div class="card">
+          <img src="img/Cone nutella e mm.jpeg" />
+          <h4 class="produto-nome">Cone Nutella & MM</h4>
+          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio">Ver cardápio</a>
+        </div>
+
+        <div class="card">
+          <img src="img/conekinder.jpg" />
+          <h4 class="produto-nome">Cone Kinder Bueno</h4>
+          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio">Ver cardápio</a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- BOMBONS -->
+    <div class="grupo-produto">
+      <h3 class="titulo-grupo">Bombons</h3>
+      <div class="grid-produtos">
+
+        <div class="card">
+          <img src="img/bombom (1).jpeg" />
+          <h4 class="produto-nome">Bombom Raffaelo</h4>
+          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio">Ver cardápio</a>
+        </div>
+
+        <div class="card">
+          <img src="img/bombom (2).jpeg" />
+          <h4 class="produto-nome">Bombom Ferrero</h4>
+          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio">Ver cardápio</a>
+        </div>
+
+        <div class="card">
+          <img src="img/bombom oreo (3).jpg" />
+          <h4 class="produto-nome">Bombom Kinder Bueno</h4>
+          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio">Ver cardápio</a>
+        </div>
+
+        <div class="card">
+          <img src="img/bombom oreo (4).jpg" />
+          <h4 class="produto-nome">Bombom Nutelloreo</h4>
+          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio">Ver cardápio</a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- DOCES NO POTE -->
+    <div class="grupo-produto">
+      <h3 class="titulo-grupo">Doces no pote</h3>
+      <div class="grid-produtos">
+
+        <div class="card">
+          <img src="img/pote (1).jpg" />
+          <h4 class="produto-nome">Banoffe</h4>
+          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio">Ver cardápio</a>
+        </div>
+
+        <div class="card">
+          <img src="img/pote (2).jpg" />
+          <h4 class="produto-nome">Pote dos Desejos</h4>
+          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio">Ver cardápio</a>
+        </div>
+
+        <div class="card">
+          <img src="img/pote (3).jpg" />
+          <h4 class="produto-nome">Merengue</h4>
+          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio">Ver cardápio</a>
+        </div>
+
+        <div class="card">
+          <img src="img/pote (4).jpg" />
+          <h4 class="produto-nome">Surpresa de Uva</h4>
+          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio">Ver cardápio</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer"> 
+    <div class="footer-item">
+      <div class="footer-icon">📷</div>
+      <div class="footer-text">
+        <span class="footer-label">Instagram</span>
+        <a href="https://instagram.com/dame.gentille" target="_blank">@dame.gentille</a>
+      </div>
+    </div>
+
+    <p class="footer-copy">© 2025 Gentille Dame - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,492 @@
+/* ================== RESET ================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffcfaf;
+  color: #d30c37;
+}
+
+/* ================== HEADER ================== */
+
+.header {
+  width: 100%;
+  height: 90px;
+  padding: 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffa08e;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.header .logo img {
+  width: 140px;
+  transition: 0.4s;
+}
+
+.header .logo img:hover {
+  transform: scale(1.05);
+}
+
+.header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 18px;
+}
+
+.header nav ul li + li {
+  border-left: 1px solid #d30c37;
+  padding-left: 14px;
+}
+
+.header nav ul li a {
+  color: #d30c37;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-bottom: 4px;
+  position: relative;
+  font-size: 14px;
+}
+
+.header nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #d30c37;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+}
+
+.header nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* ================== SLIDER ================== */
+
+.slider-container {
+  width: 100%;
+  max-width: 1200px;
+  height: 420px;
+  overflow: hidden;
+  position: relative;
+  margin: 40px auto 0;
+  border-radius: 18px;
+  border: 6px solid #ffa08e;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* BOTÕES DO SLIDER */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 160, 142, 0.8);
+  color: #fff;
+  border: none;
+  font-size: 32px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 5;
+  transition: 0.3s;
+}
+
+.slider-btn:hover {
+  background: #d30c37;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+/* INDICADORES (BOLINHAS) */
+.slider-indicators {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  background: #ffd3c7;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.indicator.active {
+  background: #d30c37;
+  width: 14px;
+  height: 14px;
+}
+
+/* ================== PRODUTOS ================== */
+
+.produtos {
+  padding: 60px 20px 40px;
+  text-align: center;
+}
+
+.produtos h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #d30c37;
+  font-weight: 700;
+  font-family: "Feldberg", "Poppins", sans-serif;
+}
+
+.produtos p {
+  font-size: 16px;
+  color: #d30c37;
+  margin-bottom: 30px;
+}
+
+.grupo-produto {
+  max-width: 1100px;
+  margin: 0 auto 40px;
+}
+
+.titulo-grupo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #d30c37;
+  margin-bottom: 18px;
+  font-family: "Feldberg", "Poppins", sans-serif;
+}
+
+/* GRID DOS CARDS */
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* CARD PADRÃO */
+.card {
+  background: #fff7ef;
+  border-radius: 16px;
+  padding: 16px;
+  text-align: center;
+  transition: 0.25s ease;
+  cursor: pointer;
+  border: 2px solid #b30000; /* borda natalina */
+  border-radius: 16px;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* NOME DO PRODUTO */
+.produto-nome {
+  margin-top: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #d30c37;
+}
+
+/* BOTÃO DO CARDAPIO */
+.btn-cardapio {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 20px;
+  background: #d30c37;
+  color: #fff;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.btn-cardapio:hover {
+  background: #ffa08e;
+  color: #d30c37;
+  transform: translateY(-2px);
+}
+
+
+/* ================== FOOTER ================== */
+
+.footer {
+  background: #ffa08e;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 40px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+.footer-item {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.footer-icon {
+  width: 38px;
+  height: 38px;
+  background: #d30c37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.footer-label {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.footer-text a {
+  text-decoration: none;
+  color: #ffd28f;
+  font-weight: 600;
+}
+
+.footer-copy {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+/* ================== PRELOADER ================== */
+
+.preloader {
+  position: fixed;
+  inset: 0;
+  background: #fcefe6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+  transition: opacity 0.4s ease;
+}
+
+.preloader.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.logo-loading img {
+  width: 95px;
+  margin-bottom: 10px;
+}
+
+.loader-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #ffd2bf;
+  border-top-color: #d30c37;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-text {
+  margin-top: 20px;
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  color: #d30c37;
+}
+
+/* ================== RESPONSIVO ================== */
+
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .slider-container {
+    height: 260px;
+  }
+
+  .slider-btn {
+    font-size: 26px;
+    padding: 6px 12px;
+  }
+
+  .titulo-grupo {
+    font-size: 20px;
+  }
+}
+/* ========== CARDS PADRÃO (mantém o que você já tem) ========== */
+
+.card {
+  background: #fff7ef;
+  border-radius: 16px;
+  padding: 16px;
+  text-align: center;
+  transition: 0.25s ease;
+  cursor: pointer;
+  border: 1px solid #ffd8c9;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.produto-nome {
+  margin-top: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #d30c37;
+}
+
+.btn-cardapio {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 20px;
+  background: #d30c37;
+  color: #fff;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.btn-cardapio:hover {
+  background: #ffa08e;
+  color: #d30c37;
+  transform: translateY(-2px);
+}
+
+/* ========== ESPECIAL: CARDS DE NATAL COM IMAGEM DE FUNDO 🎄 ========== */
+
+.card.card-natal {
+  position: relative;
+  overflow: hidden;
+
+  /* tira o fundo creme do card padrão só nos de Natal */
+  background: transparent !important;
+  border: 2px solid #b30000;
+  border-radius: 16px;
+}
+
+/* imagem de fundo que fica atrás do conteúdo */
+.card.card-natal .bg-natal {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+
+
+/* conteúdo (foto do produto, nome, botão) acima do fundo */
+.card.card-natal .card-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* mantém o hover bonito nos de Natal também */
+.card.card-natal:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+/* ======== TEXTOS DOS CARDS DE NATAL EM BRANCO ======== */
+
+/* nome do produto */
+.card.card-natal .produto-nome {
+  color: #ffffff !important;
+  text-shadow: 0px 2px 6px rgba(0,0,0,0.5); /* deixa mais legível */
+}
+
+/* botão */
+.card.card-natal .btn-cardapio {
+  background: #b30000; /* vermelho natal */
+  color: #ffffff !important;
+  border: 2px solid #fff;
+  font-weight: 700;
+}
+
+/* hover do botão */
+.card.card-natal .btn-cardapio:hover {
+  background: #ffd8a8; /* dourado/rosé */
+  color: #b30000 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(255,255,255,0.7);
+}
+
+/* legenda abaixo da foto */
+.card.card-natal h4 {
+  color: #ffffff !important;
+}
+
+/* garante contraste mesmo em fundos mais escuros */
+.card.card-natal {
+  text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
