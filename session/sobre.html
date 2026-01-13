@@ -11,37 +11,48 @@
   <!-- CSS exclusivo da página SOBRE -->
   <link rel="stylesheet" href="../css/sobre.css">
 
-   <!-- FAVICON (logo na aba) -->
+  <!-- FAVICON (logo na aba) -->
   <link rel="icon" type="image/png" href="../img/imgdame.png" />
 
   <!-- Fonte Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 </head>
+
 <body>
 
- <!-- HEADER -->
-<header class="header">
-  <div class="logo">
-    <a href="../index.html">
-      <img src="../img/logo 2.png" alt="Gentille Dame">
-    </a>
-  </div>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../img/logo 2.png" alt="Gentille Dame">
+      </a>
+    </div>
 
-  <nav>
-
-      <ul>
+    <nav class="nav">
+      <!-- LINKS (desktop) -->
+      <ul class="nav-links">
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="../index.html#produtos">Produtos</a></li>
-        <li><a href="https://app.cardapioweb.com/gentille_dame" target="_blank">Delivery</a></li>
-      <li><a href="https://wa.me/5515996675519" target="_blank" rel="noopener">Contato</a></li>
+        <li><a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener">Delivery</a></li>
+        <li><a href="https://wa.me/5515996675519" target="_blank" rel="noopener">Contato</a></li>
       </ul>
+
+      <!-- BOTÃO HAMBURGUER (mobile) -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- MENU MOBILE (abre ao clicar) -->
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#sobre">Sobre</a>
+        <a href="../index.html#produtos">Produtos</a>
+        <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener">Delivery</a>
+        <a href="https://wa.me/5515996675519" target="_blank" rel="noopener">Contato</a>
+      </div>
     </nav>
   </header>
 
-  <main class="sobre-page">
-
-   
+  <main class="sobre-page" id="sobre">
 
     <section class="sobre-card-container">
       <div class="sobre-foto">
@@ -51,64 +62,59 @@
       <div class="sobre-texto">
         <h2>Nossa História</h2>
 
-<p>
-  A Gentille Dame nasceu de um convite simples e de um grande sonho:
-  transformar a confeitaria em uma experiência delicada, elegante e cheia de afeto.
-</p>
+        <p>
+          A Gentille Dame nasceu de um convite simples e de um grande sonho:
+          transformar a confeitaria em uma experiência delicada, elegante e cheia de afeto.
+        </p>
 
-<p>
-  Quando eu ainda fazia um curso de confeitaria, uma colega me chamou para
-  começarmos a vender doces juntas. Assim nasceu nossa primeira empresa – e foi
-  ali que surgiu o nome <strong>Gentille Dame</strong>, criado por mim com todo carinho.
-  A sociedade mudou, os caminhos se separaram, mas o nome, o propósito e o amor
-  pela confeitaria permaneceram comigo.
-</p>
+        <p>
+          Quando eu ainda fazia um curso de confeitaria, uma colega me chamou para
+          começarmos a vender doces juntas. Assim nasceu nossa primeira empresa – e foi
+          ali que surgiu o nome <strong>Gentille Dame</strong>, criado por mim com todo carinho.
+          A sociedade mudou, os caminhos se separaram, mas o nome, o propósito e o amor
+          pela confeitaria permaneceram comigo.
+        </p>
 
-<p>
-  Em busca de aperfeiçoamento, estudei Gastronomia e depois conclui um curso
-  profissional de confeitaria no Senac. Foi nesse período que perdi o medo de
-  fazer bolos grandes, eventos e projetos mais complexos. Desde então, nunca mais
-  parei: cursos, testes, técnicas, receitas e, principalmente, muita dedicação
-  em cada detalhe.
-</p>
+        <p>
+          Em busca de aperfeiçoamento, estudei Gastronomia e depois conclui um curso
+          profissional de confeitaria no Senac. Foi nesse período que perdi o medo de
+          fazer bolos grandes, eventos e projetos mais complexos. Desde então, nunca mais
+          parei: cursos, testes, técnicas, receitas e, principalmente, muita dedicação
+          em cada detalhe.
+        </p>
 
-<p>
-  Hoje, a <strong>Gentille Dame</strong> é a tradução de tudo isso: estudo, coragem,
-  sensibilidade e personalidade em forma de doce. Cada bolo conta uma história,
-  cada detalhe é pensado para encantar e cada encomenda é tratada como única.
-</p>
+        <p>
+          Hoje, a <strong>Gentille Dame</strong> é a tradução de tudo isso: estudo, coragem,
+          sensibilidade e personalidade em forma de doce. Cada bolo conta uma história,
+          cada detalhe é pensado para encantar e cada encomenda é tratada como única.
+        </p>
 
-<p>
-  <strong>Bem-vindo à Gentille Dame</strong> – aqui a confeitaria é feita com verdade,
-  elegância e muito amor.
-</p>
- 
- <section class="sobre-valores">
-      <h2>Nossos Diferenciais</h2>
-      <p> • Usamos apenas produtos da melhor qualidade </p>
-        <p> • Experiência em eventos, casamentos e datas especiais </p>
-        <p> • Estilo próprio, delicado e sofisticado</p>
-        
-    </section>
-      
+        <p>
+          <strong>Bem-vindo à Gentille Dame</strong> – aqui a confeitaria é feita com verdade,
+          elegância e muito amor.
+        </p>
+
+        <section class="sobre-valores">
+          <h2>Nossos Diferenciais</h2>
+          <p> • Usamos apenas produtos da melhor qualidade </p>
+          <p> • Experiência em eventos, casamentos e datas especiais </p>
+          <p> • Estilo próprio, delicado e sofisticado</p>
+        </section>
+
       </div>
     </section>
-
-  
 
   </main>
 
   <!-- FOOTER -->
-  <footer class="footer"> 
-
-      <div class="footer-item">
-        <div class="footer-icon">📷</div>
-        <div class="footer-text">
-          <span class="footer-label">Instagram</span>
-          <a href="https://instagram.com/dame.gentille" target="_blank" rel="noopener">
-            @dame.gentille
-          </a>
-        </div>
+  <footer class="footer">
+    <div class="footer-item">
+      <div class="footer-icon">📷</div>
+      <div class="footer-text">
+        <span class="footer-label">Instagram</span>
+        <a href="https://instagram.com/dame.gentille" target="_blank" rel="noopener">
+          @dame.gentille
+        </a>
       </div>
     </div>
 
@@ -117,5 +123,7 @@
     </p>
   </footer>
 
+  <!-- JS (necessário pro menu hambúrguer funcionar) -->
+  <script src="../js/script.js"></script>
 </body>
 </html>

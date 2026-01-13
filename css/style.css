@@ -147,10 +147,6 @@ body {
   gap: 10px;
 }
 
-/* ✅ IMPORTANTE:
-   Seu JS cria .dot, então o CSS também precisa ter .dot.
-   Mantive .indicator também caso você use em outro lugar.
-*/
 .dot,
 .indicator {
   width: 12px;
@@ -199,7 +195,7 @@ body {
   font-weight: 700;
   color: #d30c37;
   margin-bottom: 18px;
-  font-family: "F_toggleeldberg", "Poppins", sans-serif;
+  font-family: "Feldberg", "Poppins", sans-serif;
 }
 
 /* GRID DOS CARDS */
@@ -211,11 +207,7 @@ body {
   margin: 0 auto;
 }
 
-/* CARD PADRÃO
-   ⚠️ Você tinha .card duplicado com bordas diferentes.
-   Eu mantive a versão mais recente (borda 1px), para não ficar conflito.
-   Se você quiser a borda de 2px natalina no padrão, eu ajusto.
-*/
+/* CARD PADRÃO */
 .card {
   background: #fff7ef;
   border-radius: 16px;
@@ -238,7 +230,6 @@ body {
   border-radius: 12px;
 }
 
-/* NOME DO PRODUTO */
 .produto-nome {
   margin-top: 12px;
   font-size: 17px;
@@ -246,7 +237,6 @@ body {
   color: #d30c37;
 }
 
-/* BOTÃO DO CARDAPIO */
 .btn-cardapio {
   display: inline-block;
   margin-top: 12px;
@@ -416,7 +406,6 @@ body {
 
 /* =========================================================
    ✅ MOBILE (MENU HAMBURGUER + BANNER + 2 COLUNAS)
-   (SEM ALTERAR A VERSÃO WEB)
    ========================================================= */
 
 /* BOTÃO HAMBURGUER */
@@ -428,6 +417,12 @@ body {
   background: transparent;
   cursor: pointer;
   border-radius: 10px;
+
+  /* ✅ melhora MUITO no mobile */
+  position: relative;
+  z-index: 1000000;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .menu-toggle span {
@@ -443,16 +438,16 @@ body {
 /* menu dropdown mobile */
 .mobile-menu {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 90px;
   right: 18px;
   background: #fff7ef;
   border: 1px solid rgba(211, 12, 55, 0.2);
   border-radius: 14px;
   padding: 10px;
-  width: 200px;
+  width: 220px;
   box-shadow: 0 14px 30px rgba(0,0,0,0.18);
-  z-index: 999;
+  z-index: 999999;
 }
 
 .mobile-menu a {
@@ -472,11 +467,6 @@ body {
   display: block;
 }
 
-/* referência pro menu absoluto */
-.header .nav {
-  position: relative;
-}
-
 /* banner mobile */
 .mobile-banner {
   display: none; /* aparece só no mobile */
@@ -489,7 +479,6 @@ body {
   width: 100%;
   height: auto;
 
-  /* 🔥 garante meia tela no mobile */
   max-height: 50vh;
   object-fit: cover;
 
@@ -499,17 +488,15 @@ body {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
-
 /* ================== RESPONSIVO (MOBILE) ================== */
 
 @media (max-width: 700px) {
   .header {
-    flex-direction: row; /* mantém header alinhado no mobile */
+    flex-direction: row;
     height: 90px;
     padding: 16px 18px;
   }
 
-  /* esconde links e mostra hambúrguer */
   .nav-links {
     display: none !important;
   }
@@ -518,7 +505,6 @@ body {
     display: block;
   }
 
-  /* some slider e mostra banner */
   .slider-container {
     display: none;
   }
@@ -527,7 +513,6 @@ body {
     display: block;
   }
 
-  /* produtos 2 por linha */
   .grid-produtos {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 14px;
