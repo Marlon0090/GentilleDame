@@ -40,6 +40,7 @@ body {
   transform: scale(1.05);
 }
 
+/* NAV (DESKTOP) */
 .header nav ul {
   display: flex;
   list-style: none;
@@ -136,7 +137,7 @@ body {
   right: 20px;
 }
 
-/* INDICADORES (BOLINHAS) */
+/* INDICADORES (BOLINHAS) - BASE */
 .slider-indicators {
   position: absolute;
   bottom: 12px;
@@ -146,6 +147,11 @@ body {
   gap: 10px;
 }
 
+/* ✅ IMPORTANTE:
+   Seu JS cria .dot, então o CSS também precisa ter .dot.
+   Mantive .indicator também caso você use em outro lugar.
+*/
+.dot,
 .indicator {
   width: 12px;
   height: 12px;
@@ -155,6 +161,7 @@ body {
   transition: 0.3s;
 }
 
+.dot.active,
 .indicator.active {
   background: #d30c37;
   width: 14px;
@@ -192,7 +199,7 @@ body {
   font-weight: 700;
   color: #d30c37;
   margin-bottom: 18px;
-  font-family: "Feldberg", "Poppins", sans-serif;
+  font-family: "F_toggleeldberg", "Poppins", sans-serif;
 }
 
 /* GRID DOS CARDS */
@@ -204,7 +211,11 @@ body {
   margin: 0 auto;
 }
 
-/* CARD PADRÃO */
+/* CARD PADRÃO
+   ⚠️ Você tinha .card duplicado com bordas diferentes.
+   Eu mantive a versão mais recente (borda 1px), para não ficar conflito.
+   Se você quiser a borda de 2px natalina no padrão, eu ajusto.
+*/
 .card {
   background: #fff7ef;
   border-radius: 16px;
@@ -212,8 +223,7 @@ body {
   text-align: center;
   transition: 0.25s ease;
   cursor: pointer;
-  border: 2px solid #b30000; /* borda natalina */
-  border-radius: 16px;
+  border: 1px solid #ffd8c9;
 }
 
 .card:hover {
@@ -257,7 +267,6 @@ body {
   color: #d30c37;
   transform: translateY(-2px);
 }
-
 
 /* ================== FOOTER ================== */
 
@@ -349,92 +358,16 @@ body {
   color: #d30c37;
 }
 
-/* ================== RESPONSIVO ================== */
-
-@media (max-width: 700px) {
-  .header {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .slider-container {
-    height: 260px;
-  }
-
-  .slider-btn {
-    font-size: 26px;
-    padding: 6px 12px;
-  }
-
-  .titulo-grupo {
-    font-size: 20px;
-  }
-}
-/* ========== CARDS PADRÃO (mantém o que você já tem) ========== */
-
-.card {
-  background: #fff7ef;
-  border-radius: 16px;
-  padding: 16px;
-  text-align: center;
-  transition: 0.25s ease;
-  cursor: pointer;
-  border: 1px solid #ffd8c9;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
-}
-
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
-.produto-nome {
-  margin-top: 12px;
-  font-size: 17px;
-  font-weight: 600;
-  color: #d30c37;
-}
-
-.btn-cardapio {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 8px 20px;
-  background: #d30c37;
-  color: #fff;
-  border-radius: 999px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  transition: 0.3s;
-}
-
-.btn-cardapio:hover {
-  background: #ffa08e;
-  color: #d30c37;
-  transform: translateY(-2px);
-}
-
 /* ========== ESPECIAL: CARDS DE NATAL COM IMAGEM DE FUNDO 🎄 ========== */
 
 .card.card-natal {
   position: relative;
   overflow: hidden;
-
-  /* tira o fundo creme do card padrão só nos de Natal */
   background: transparent !important;
   border: 2px solid #b30000;
   border-radius: 16px;
 }
 
-/* imagem de fundo que fica atrás do conteúdo */
 .card.card-natal .bg-natal {
   position: absolute;
   inset: 0;
@@ -444,49 +377,176 @@ body {
   z-index: 0;
 }
 
-
-
-/* conteúdo (foto do produto, nome, botão) acima do fundo */
 .card.card-natal .card-content {
   position: relative;
   z-index: 2;
 }
 
-/* mantém o hover bonito nos de Natal também */
 .card.card-natal:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 }
-/* ======== TEXTOS DOS CARDS DE NATAL EM BRANCO ======== */
 
-/* nome do produto */
 .card.card-natal .produto-nome {
   color: #ffffff !important;
-  text-shadow: 0px 2px 6px rgba(0,0,0,0.5); /* deixa mais legível */
+  text-shadow: 0px 2px 6px rgba(0,0,0,0.5);
 }
 
-/* botão */
 .card.card-natal .btn-cardapio {
-  background: #b30000; /* vermelho natal */
+  background: #b30000;
   color: #ffffff !important;
   border: 2px solid #fff;
   font-weight: 700;
 }
 
-/* hover do botão */
 .card.card-natal .btn-cardapio:hover {
-  background: #ffd8a8; /* dourado/rosé */
+  background: #ffd8a8;
   color: #b30000 !important;
   transform: translateY(-2px);
   box-shadow: 0 0 15px rgba(255,255,255,0.7);
 }
 
-/* legenda abaixo da foto */
 .card.card-natal h4 {
   color: #ffffff !important;
 }
 
-/* garante contraste mesmo em fundos mais escuros */
 .card.card-natal {
   text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+
+/* =========================================================
+   ✅ MOBILE (MENU HAMBURGUER + BANNER + 2 COLUNAS)
+   (SEM ALTERAR A VERSÃO WEB)
+   ========================================================= */
+
+/* BOTÃO HAMBURGUER */
+.menu-toggle {
+  display: none; /* aparece só no mobile */
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 3px;
+  width: 26px;
+  background: #d30c37;
+  margin: 6px auto;
+  border-radius: 3px;
+  transition: 0.25s;
+}
+
+/* menu dropdown mobile */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 90px;
+  right: 18px;
+  background: #fff7ef;
+  border: 1px solid rgba(211, 12, 55, 0.2);
+  border-radius: 14px;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.18);
+  z-index: 999;
+}
+
+.mobile-menu a {
+  display: block;
+  text-decoration: none;
+  color: #d30c37;
+  font-weight: 700;
+  padding: 12px 10px;
+  border-radius: 10px;
+}
+
+.mobile-menu a:hover {
+  background: rgba(255, 160, 142, 0.35);
+}
+
+.mobile-menu.open {
+  display: block;
+}
+
+/* referência pro menu absoluto */
+.header .nav {
+  position: relative;
+}
+
+/* banner mobile */
+.mobile-banner {
+  display: none; /* aparece só no mobile */
+  max-width: 1200px;
+  margin: 18px auto 0;
+  padding: 0 14px;
+}
+
+.mobile-banner img {
+  width: 100%;
+  height: auto;
+
+  /* 🔥 garante meia tela no mobile */
+  max-height: 50vh;
+  object-fit: cover;
+
+  border-radius: 18px;
+  border: 6px solid #ffa08e;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ================== RESPONSIVO (MOBILE) ================== */
+
+@media (max-width: 700px) {
+  .header {
+    flex-direction: row; /* mantém header alinhado no mobile */
+    height: 90px;
+    padding: 16px 18px;
+  }
+
+  /* esconde links e mostra hambúrguer */
+  .nav-links {
+    display: none !important;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* some slider e mostra banner */
+  .slider-container {
+    display: none;
+  }
+
+  .mobile-banner {
+    display: block;
+  }
+
+  /* produtos 2 por linha */
+  .grid-produtos {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 14px;
+  }
+
+  .card img {
+    height: 140px;
+  }
+
+  .produto-nome {
+    font-size: 14px;
+  }
+
+  .btn-cardapio {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .titulo-grupo {
+    font-size: 20px;
+  }
 }

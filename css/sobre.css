@@ -1,10 +1,9 @@
-
-/* container da página */
+/* ================== CONTAINER DA PÁGINA ================== */
 .sobre-page {
   padding: 40px 20px 60px;
 }
 
-/* HERO */
+/* ================== HERO ================== */
 .sobre-hero {
   max-width: 900px;
   margin: 40px auto 60px;
@@ -28,7 +27,7 @@
   margin: auto;
 }
 
-/* FOTO + TEXTO LADO A LADO */
+/* ================== FOTO + TEXTO ================== */
 .sobre-card-container {
   max-width: 1100px;
   margin: auto;
@@ -43,7 +42,7 @@
   margin-bottom: 60px;
 }
 
-/* foto circular */
+/* FOTO */
 .sobre-foto {
   flex: 1 1 260px;
   display: flex;
@@ -59,7 +58,7 @@
   box-shadow: 0 12px 25px rgba(0,0,0,0.18);
 }
 
-/* texto */
+/* TEXTO */
 .sobre-texto {
   flex: 2 1 320px;
 }
@@ -72,50 +71,50 @@
 
 .sobre-texto p {
   font-size: 15px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   color: #6b4a4a;
   line-height: 1.6;
 }
 
-.sobre-texto ul {
-  margin-top: 12px;
-  padding-left: 20px;
-  font-size: 15px;
-}
-
-/* DIFERENCIAIS */
+/* ================== DIFERENCIAIS ================== */
 .sobre-valores {
-  max-width: 1100px;
-  margin: auto;
-  text-align: center;
+  margin-top: 30px;
 }
 
 .sobre-valores h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 14px;
+  color: #4b2e2e;
 }
 
-.sobre-valores-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+.sobre-valores p {
+  font-size: 15px;
+  color: #6b4a4a;
+  line-height: 1.6;
 }
 
-.sobre-card {
-  background: #fdf5ee;
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-}
-
-.sobre-card h3 {
-  margin-bottom: 10px;
-}
-
-/* RESPONSIVO */
+/* ================== RESPONSIVO ================== */
 @media (max-width: 768px) {
+
+  /* respiro extra por causa do header fixo */
+  .sobre-page {
+    padding-top: 30px;
+  }
+
   .sobre-hero {
     margin: 20px auto 40px;
+    padding: 24px 18px;
+  }
+
+  .sobre-hero h1 {
+    font-size: 26px;
+  }
+
+  .sobre-card-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    gap: 24px;
   }
 
   .sobre-foto img {
@@ -123,7 +122,15 @@
     height: 220px;
   }
 
-  .sobre-card-container {
-    padding: 20px;
+  .sobre-texto h2 {
+    font-size: 22px;
+  }
+
+  .sobre-texto p {
+    font-size: 14px;
+  }
+
+  .sobre-valores h2 {
+    font-size: 22px;
   }
 }
