@@ -2,256 +2,1404 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gentille Dame | Confeitaria em Sorocaba | Bolos Personalizados, Bento Cakes e Mesversário</title>
-
-  <meta name="description"
-    content="Confeitaria em Sorocaba especializada em bolos personalizados, bento cakes e bolos de mesversário. Encomende pelo WhatsApp.">
-
-  <meta name="keywords"
-    content="confeitaria em sorocaba, bolos personalizados sorocaba, bento cake sorocaba, bolo de mesversário sorocaba">
-
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="Gentille Dame">
+  <meta charset="UTF-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- FAVICON (logo na aba) -->
-  <link rel="icon" type="image/png" href="img/imgdame.png" />
-  <!-- Fonte Poppins -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>
+    Gentille Dame | Confeitaria em Sorocaba | Bolos Personalizados, Bento Cakes e Mesversário
+  </title>
 
-  <link rel="stylesheet" href="css/style.css" />
+  <meta name="description"
+    content="Gentille Dame é uma confeitaria em Sorocaba especializada em bolos personalizados, bento cakes, bolos de mesversário, cones recheados, bombons e doces no pote.">
+
+  <meta name="keywords"
+    content="confeitaria em Sorocaba, bolos personalizados Sorocaba, bento cake Sorocaba, bolo mesversário Sorocaba, doces em Sorocaba, bolo de aniversário Sorocaba, cones recheados Sorocaba, bombons Sorocaba">
+
+  <meta name="robots" content="index, follow">
+
+  <meta name="author" content="Gentille Dame">
+
+  <meta name="theme-color" content="#c85a7c">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="img/imgdame.png">
+
+  <!-- FONTE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 
 <body>
 
-  <!-- PRELOADER -->
+
+  <!-- =====================================================
+       PRELOADER
+  ====================================================== -->
+
   <div class="preloader">
+
     <div class="logo-loading">
-      <img src="img/logo.png" alt="Gentille Dame" />
+
+      <img src="img/logo.png" alt="Gentille Dame">
+
     </div>
+
     <div class="loader-circle"></div>
-    <div class="loader-text">CARREGANDO</div>
+
+    <div class="loader-text">
+      CARREGANDO
+    </div>
+
   </div>
 
-  <!-- HEADER (desktop e mobile) -->
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
   <header class="header">
-    <div class="logo">
-      <img src="img/logo 2.png" alt="Gentille Dame" />
+
+    <div class="header-inner">
+
+
+      <!-- LOGO -->
+
+      <a href="index.html" class="logo" aria-label="Gentille Dame - Página inicial">
+
+        <img src="img/logo 2.png" alt="Gentille Dame Confeitaria">
+
+      </a>
+
+
+      <!-- NAVEGAÇÃO -->
+
+      <nav class="nav" aria-label="Navegação principal">
+
+        <ul class="nav-links">
+
+          <li>
+            <a href="index.html">
+              Inicio
+            </a>
+          </li>
+
+          <li>
+            <a href="session/bolos.html">
+              Bolos
+            </a>
+          </li>
+
+          <li>
+            <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener">
+              Delivery
+            </a>
+          </li>
+
+          <li>
+            <a href="session/sobre.html">
+              Sobre
+            </a>
+          </li>
+
+          <li>
+            <a href="https://wa.me/5515996675519" target="_blank" rel="noopener">
+              Contato
+            </a>
+          </li>
+
+        </ul>
+
+
+        <!-- MENU MOBILE -->
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" type="button">
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+        </button>
+
+
+        <div class="mobile-menu" id="mobileMenu">
+
+          <a href="index.html">
+            Inicio
+          </a>
+
+          <a href="session/bolos.html">
+            Bolos
+          </a>
+
+          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener">
+            Delivery
+          </a>
+
+          <a href="session/sobre.html">
+            Sobre
+          </a>
+
+          <a href="https://wa.me/5515996675519" target="_blank" rel="noopener">
+            Contato
+          </a>
+
+        </div>
+
+      </nav>
+
     </div>
 
-    <nav class="nav">
-      <!-- LINKS (desktop) -->
-      <ul class="nav-links">
-        <li><a href="session/bolos.html">Bolos</a></li>
-        <li><a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener">Delivery</a></li>
-        <li><a href="session/sobre.html">Sobre</a></li>
-        <li><a href="https://wa.me/5515996675519" target="_blank" rel="noopener">Contato</a></li>
-      </ul>
-
-      <!-- BOTÃO HAMBURGUER (mobile) -->
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-      <!-- MENU MOBILE (abre ao clicar) -->
-      <div class="mobile-menu" id="mobileMenu">
-        <a href="session/bolos.html">Bolos</a>
-        <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener">Delivery</a>
-        <a href="session/sobre.html">Sobre</a>
-        <a href="https://wa.me/5515996675519" target="_blank" rel="noopener">Contato</a>
-      </div>
-    </nav>
   </header>
 
-  <!-- BANNER MOBILE (só aparece no celular) -->
+
+
+  <!-- =====================================================
+       BANNER MOBILE
+  ====================================================== -->
+
   <section class="mobile-banner">
-    <!-- troque o arquivo por um banner seu: img/banner-mobile.jpg -->
-    <img src="img/confeitaria.png" alt="Gentille Dame" />
+
+    <div class="mobile-banner-image">
+
+      <img src="img/confeitaria.png" alt="Gentille Dame Confeitaria em Sorocaba">
+
+    </div>
+
   </section>
 
-  <!-- SLIDER (desktop) -->
-  <section class="slider-container">
-    <!-- BOTÕES -->
-    <button class="slider-btn prev" id="prevBtn">❮</button>
-    <button class="slider-btn next" id="nextBtn">❯</button>
 
-    <div class="slider" id="slider">
-      <div class="slide" style="background-image: url('img/confeitaria-sorocaba.png')"></div>
-      <div class="slide" style="background-image: url('img/geladinho.png');"></div>
-      <div class="slide" style="background-image: url('img/delivey.png');"></div>
-    </div>
 
-    <!-- INDICADORES -->
-    <div class="slider-indicators" id="indicators"></div>
-  </section>
+  <!-- =====================================================
+       HERO / SLIDER
+  ====================================================== -->
 
-  <!-- PRODUTOS -->
-  <section class="produtos" id="produtos">
-    <h1>Bolos Personalizados, Bento Cakes, Bolo Mêsversario.</h1>
-    <p>Doces finos, bolos especiais e experiências pensadas para momentos inesquecíveis.</p>
+  <main>
 
-    <!-- BOLOS -->
-    <div class="grupo-produto">
-      <h3 class="titulo-grupo">Bolos</h3>
-      <div class="grid-produtos">
-        <div class="card">
-          <img src="img/bentocake.HEIC" alt=" bento cake personalizado em sorocaba" />
-          <h4 class="produto-nome">Bolo Tradicional</h4>
-          <a href="session/bolos.html" class="btn-cardapio">Ver cardápio</a>
+
+    <section class="slider-container" aria-label="Destaques Gentille Dame">
+
+
+      <div class="slider" id="slider">
+
+
+        <!-- SLIDE 1 -->
+
+        <div class="slide" style="background-image: url('img/confeitaria-sorocaba.png');"
+          aria-label="Confeitaria Gentille Dame em Sorocaba">
+
+          <div class="slide-overlay">
+
+            <div class="slide-content">
+
+
+
+            </div>
+
+          </div>
+
         </div>
 
-        <div class="card">
-          <img src="img/bolo.JPG" alt="bolo personalizado em sorocaba" />
-          <h4 class="produto-nome">Bolo Premium</h4>
-          <a href="session/bolos.html" class="btn-cardapio">Ver cardápio</a>
+
+
+
+        <div class="slide" style="background-image: url('img/delivey.png');" aria-label="Delivery Gentille Dame">
+
+          <div class="slide-overlay">
+
+            <div class="slide-content">
+
+
+            </div>
+
+          </div>
+
         </div>
 
-        <div class="card">
-          <img src="img/bolo pao de mel.jpeg" alt="bolo pão de mel em sorocaba" />
-          <h4 class="produto-nome">Bolo Pão de Mel</h4>
-          <a href="session/bolos.html" class="btn-cardapio">Ver cardápio</a>
-        </div>
 
-        <div class="card">
-          <img src="img/mesversario.jpg" alt=" Bolo Mêsversario em Sorocaba" />
-          <h4 class="produto-nome">Bolo Mêsversario</h4>
-          <a href="session/bolos.html" class="btn-cardapio">Ver cardápio</a>
-        </div>
       </div>
-    </div>
 
-    <!-- CONES -->
-    <div class="grupo-produto">
-      <h3 class="titulo-grupo">Cones</h3>
-      <div class="grid-produtos">
-        <div class="card">
-          <img src="img/cone ferrero.jpg" alt="Cone Recheado em Sorocaba" />
-          <h4 class="produto-nome">Cone Ferrero</h4>
-          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio" rel="noopener">Ver
-            cardápio</a>
+
+      <!-- SETA ANTERIOR -->
+
+      <button class="slider-btn prev" id="prevBtn" type="button" aria-label="Slide anterior">
+        <span>←</span>
+      </button>
+
+
+      <!-- SETA PRÓXIMO -->
+
+      <button class="slider-btn next" id="nextBtn" type="button" aria-label="Próximo slide">
+        <span>→</span>
+      </button>
+
+
+      <!-- INDICADORES -->
+
+      <div class="slider-indicators" id="indicators" aria-label="Indicadores dos slides"></div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         INTRODUÇÃO
+    ====================================================== -->
+
+    <section class="intro-section" id="produtos">
+
+      <div class="section-heading">
+
+        <span class="section-kicker">
+          GENTILLE DAME
+        </span>
+
+        <h1>
+          Bolos personalizados,
+          <br>
+          doces e momentos inesquecíveis.
+        </h1>
+
+        <div class="heading-line">
+
+          <span></span>
+
         </div>
 
-        <div class="card">
-          <img src="img/cone rafaelo.jpg" alt="Cone Recheado em Sorocaba" />
-          <h4 class="produto-nome">Cone Raffaelo</h4>
-          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio" rel="noopener">Ver
-            cardápio</a>
-        </div>
+        <p>
+          Doces finos, bolos especiais e experiências
+          pensadas para tornar cada ocasião ainda mais
+          especial.
+        </p>
 
-        <div class="card">
-          <img src="img/Cone nutella e mm.jpeg" alt="Cone Recheado em Sorocaba" />
-          <h4 class="produto-nome">Cone Nutella & MM</h4>
-          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio" rel="noopener">Ver
-            cardápio</a>
-        </div>
-
-        <div class="card">
-          <img src="img/conekinder.jpg" alt="Cone Recheado em Sorocaba" />
-          <h4 class="produto-nome">Cone Kinder Bueno</h4>
-          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio" rel="noopener">Ver
-            cardápio</a>
-        </div>
       </div>
-    </div>
 
-    <!-- BOMBONS -->
-    <div class="grupo-produto">
-      <h3 class="titulo-grupo">Bombons</h3>
-      <div class="grid-produtos">
-        <div class="card">
-          <img src="img/bombom (1).jpeg" alt="bombom trufado em sorocaba" />
-          <h4 class="produto-nome">Bombom Raffaelo</h4>
-          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio" rel="noopener">Ver
-            cardápio</a>
+    </section>
+
+
+
+    <!-- =====================================================
+         PRODUTOS
+    ====================================================== -->
+
+    <section class="produtos">
+
+
+      <!-- ===================================================
+           BOLOS
+      ==================================================== -->
+
+      <div class="grupo-produto">
+
+
+        <div class="categoria-heading">
+
+          <span>
+            NOSSA ESPECIALIDADE
+          </span>
+
+          <h3 class="titulo-grupo">
+            Bolos
+          </h3>
+
+          <p>
+            Criados para transformar celebrações
+            em lembranças especiais.
+          </p>
+
         </div>
 
-        <div class="card">
-          <img src="img/bombom (2).jpeg" alt="bombom trufado em sorocaba" />
-          <h4 class="produto-nome">Bombom Ferrero</h4>
-          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio" rel="noopener">Ver
-            cardápio</a>
+
+        <div class="grid-produtos">
+
+
+          <!-- BOLO 1 -->
+
+          <article class="card">
+
+            <div class="card-image">
+
+              <img src="img/bentocake.HEIC" alt="Bento cake personalizado em Sorocaba" loading="lazy">
+
+              <div class="card-image-overlay"></div>
+
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-number">
+                01
+              </span>
+
+              <h4 class="produto-nome">
+                Bolo Tradicional
+              </h4>
+
+              <a href="session/bolos.html" class="btn-cardapio">
+                Ver cardápio
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- BOLO 2 -->
+
+          <article class="card">
+
+            <div class="card-image">
+
+              <img src="img/bolo.JPG" alt="Bolo personalizado em Sorocaba" loading="lazy">
+
+              <div class="card-image-overlay"></div>
+
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-number">
+                02
+              </span>
+
+              <h4 class="produto-nome">
+                Bolo Premium
+              </h4>
+
+              <a href="session/bolos.html" class="btn-cardapio">
+                Ver cardápio
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- BOLO 3 -->
+
+          <article class="card">
+
+            <div class="card-image">
+
+              <img src="img/bolo pao de mel.jpeg" alt="Bolo pão de mel em Sorocaba" loading="lazy">
+
+              <div class="card-image-overlay"></div>
+
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-number">
+                03
+              </span>
+
+              <h4 class="produto-nome">
+                Bolo Pão de Mel
+              </h4>
+
+              <a href="session/bolos.html" class="btn-cardapio">
+                Ver cardápio
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- BOLO 4 -->
+
+          <article class="card">
+
+            <div class="card-image">
+
+              <img src="img/mesversario.jpg" alt="Bolo de mesversário em Sorocaba" loading="lazy">
+
+              <div class="card-image-overlay"></div>
+
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-number">
+                04
+              </span>
+
+              <h4 class="produto-nome">
+                Bolo Mêsversário
+              </h4>
+
+              <a href="session/bolos.html" class="btn-cardapio">
+                Ver cardápio
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+          <!-- BOLO 5 -->
+
+          <article class="card">
+
+            <div class="card-image">
+
+              <img src="img/IMG_6172.jpg" alt="Bolo Premium" loading="lazy">
+
+              <div class="card-image-overlay"></div>
+
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-number">
+                05
+              </span>
+
+              <h4 class="produto-nome">
+                Bolo Premium
+              </h4>
+
+              <a href="session/bolos.html" class="btn-cardapio">
+                Ver cardápio
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- BOLO 6 -->
+
+          <article class="card">
+
+            <div class="card-image">
+
+              <img src="img/IMG_6113.jpg" alt="Bolo personalizado em Sorocaba" loading="lazy">
+
+              <div class="card-image-overlay"></div>
+
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-number">
+                06
+              </span>
+
+              <h4 class="produto-nome">
+                Bolo Premium
+              </h4>
+
+              <a href="session/bolos.html" class="btn-cardapio">
+                Ver cardápio
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- BOLO 7 -->
+
+          <article class="card">
+
+            <div class="card-image">
+
+              <img src="img/FAC2BAEC-B142-4C06-96DB-61BE4DA0527F.jpg" alt="Bolo pão de mel em Sorocaba" loading="lazy">
+
+              <div class="card-image-overlay"></div>
+
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-number">
+                07
+              </span>
+
+              <h4 class="produto-nome">
+                Bolo Premium
+              </h4>
+
+              <a href="session/bolos.html" class="btn-cardapio">
+                Ver cardápio
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- BOLO 8 -->
+
+          <article class="card">
+
+            <div class="card-image">
+
+              <img src="img/IMG_6154.jpg" alt="Bolo de mesversário em Sorocaba" loading="lazy">
+
+              <div class="card-image-overlay"></div>
+
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-number">
+                08
+              </span>
+
+              <h4 class="produto-nome">
+                Bolo Mêsversário
+              </h4>
+
+              <a href="session/bolos.html" class="btn-cardapio">
+                Ver cardápio
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
         </div>
 
-        <div class="card">
-          <img src="img/bombom oreo (3).jpg" alt="bombom trufado em sorocaba" />
-          <h4 class="produto-nome">Bombom Kinder Bueno</h4>
-          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio" rel="noopener">Ver
-            cardápio</a>
-        </div>
-
-        <div class="card">
-          <img src="img/bombom oreo (4).jpg" alt="bombom trufado em sorocaba" />
-          <h4 class="produto-nome">Bombom Nutelloreo</h4>
-          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio" rel="noopener">Ver
-            cardápio</a>
-        </div>
       </div>
-    </div>
 
-    <!-- DOCES NO POTE -->
-    <div class="grupo-produto">
-      <h3 class="titulo-grupo">Doces no pote</h3>
-      <div class="grid-produtos">
-        <div class="card">
-          <img src="img/pote (1).jpg" />
-          <h4 class="produto-nome">Banoffe</h4>
-          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio" rel="noopener">Ver
-            cardápio</a>
+      <!-- ===================================================
+           DOCINHOS
+      ==================================================== -->
+
+
+      <div class="grupo-produto">
+
+        <div class="categoria-heading">
+
+          <span>
+            PEQUENOS E DELICIOSOS
+          </span>
+
+          <h3 class="titulo-grupo">
+            Docinhos
+          </h3>
+
+          <p>
+            Delicados, saborosos e preparados
+            para deixar cada momento ainda mais especial.
+          </p>
+
         </div>
 
-        <div class="card">
-          <img src="img/pote (2).jpg" />
-          <h4 class="produto-nome">Pote dos Desejos</h4>
-          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio" rel="noopener">Ver
-            cardápio</a>
+
+
+
+        <div class="grid-produtos">
+
+
+          <!-- DOCINHOS -->
+
+          <article class="card">
+
+            <div class="card-image">
+
+              <img src="img/docinhos1.jpg" alt="Docinhos em Sorocaba" loading="lazy">
+
+              <div class="card-image-overlay"></div>
+
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-number">
+                01
+              </span>
+
+              <h4 class="produto-nome">
+                Docinhos Sortidos
+              </h4>
+
+              <a href="https://wa.me/5515996675519" target="_blank" rel="noopener" class="btn-cardapio">
+                Fazer minha Encomenda
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- DOCINHOS -->
+
+          <article class="card">
+
+            <div class="card-image">
+
+              <img src="img/minicamafeu.jpg" alt="Docinhos de Festa em Sorocaba" loading="lazy">
+
+              <div class="card-image-overlay"></div>
+
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-number">
+                02
+              </span>
+
+              <h4 class="produto-nome">
+                Mini Camafeu
+              </h4>
+
+              <a href="https://wa.me/5515996675519" target="_blank" rel="noopener" class="btn-cardapio">
+                Fazer minha Encomenda
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- DOCINHOS -->
+
+          <article class="card">
+
+            <div class="card-image">
+
+              <img src="img/IMG_5952.jpg" alt="Docinhos em Sorocaba" loading="lazy">
+
+              <div class="card-image-overlay"></div>
+
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-number">
+                03
+              </span>
+
+              <h4 class="produto-nome">
+                Docinhos Sortidos
+              </h4>
+
+              <a href="https://wa.me/5515996675519" target="_blank" rel="noopener" class="btn-cardapio">
+                Fazer minha Encomenda
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- DOCINHOS -->
+
+          <article class="card">
+
+            <div class="card-image">
+
+              <img src="img/docinhos2.jpg" alt="Docinhos em Sorocaba" loading="lazy">
+
+              <div class="card-image-overlay"></div>
+
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-number">
+                04
+              </span>
+
+              <h4 class="produto-nome">
+                Docinhos Sortidos
+              </h4>
+
+              <a href="https://wa.me/5515996675519" target="_blank" rel="noopener" class="btn-cardapio">
+                Fazer minha Encomenda
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
         </div>
 
-        <div class="card">
-          <img src="img/pote (3).jpg" />
-          <h4 class="produto-nome">Merengue</h4>
-          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio" rel="noopener">Ver
-            cardápio</a>
-        </div>
-
-        <div class="card">
-          <img src="img/pote (4).jpg" />
-          <h4 class="produto-nome">Surpresa de Uva</h4>
-          <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" class="btn-cardapio" rel="noopener">Ver
-            cardápio</a>
-        </div>
       </div>
-    </div>
-  </section>
 
-  <!-- FOOTER -->
+
+
+      <!-- ===================================================
+           CONES
+      ==================================================== -->
+
+      <div class="grupo-produto">
+
+
+        <div class="categoria-heading">
+
+          <span>
+            IRRESISTÍVEIS
+          </span>
+
+          <h3 class="titulo-grupo">
+            Cones
+          </h3>
+
+          <p>
+            Recheios especiais para deixar
+            qualquer momento mais gostoso.
+          </p>
+
+        </div>
+
+
+        <div class="grid-produtos">
+
+
+          <!-- CONE FERRERO -->
+
+          <article class="card">
+
+            <div class="card-image">
+
+              <img src="img/cone ferrero.jpg" alt="Cone Ferrero recheado em Sorocaba" loading="lazy">
+
+              <div class="card-image-overlay"></div>
+
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-number">
+                01
+              </span>
+
+              <h4 class="produto-nome">
+                Cone Ferrero
+              </h4>
+
+              <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener" class="btn-cardapio">
+                Ver cardápio
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- CONE RAFFAELLO -->
+
+          <article class="card">
+
+            <div class="card-image">
+
+              <img src="img/cone rafaelo.jpg" alt="Cone Raffaello recheado em Sorocaba" loading="lazy">
+
+              <div class="card-image-overlay"></div>
+
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-number">
+                02
+              </span>
+
+              <h4 class="produto-nome">
+                Cone Raffaello
+              </h4>
+
+              <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener" class="btn-cardapio">
+                Ver cardápio
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- CONE NUTELLA -->
+
+          <article class="card">
+
+            <div class="card-image">
+
+              <img src="img/Cone nutella e mm.jpeg" alt="Cone Nutella e MM recheado em Sorocaba" loading="lazy">
+
+              <div class="card-image-overlay"></div>
+
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-number">
+                03
+              </span>
+
+              <h4 class="produto-nome">
+                Cone Nutella & MM
+              </h4>
+
+              <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener" class="btn-cardapio">
+                Ver cardápio
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- CONE KINDER -->
+
+          <article class="card">
+
+            <div class="card-image">
+
+              <img src="img/conekinder.jpg" alt="Cone Kinder Bueno recheado em Sorocaba" loading="lazy">
+
+              <div class="card-image-overlay"></div>
+
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-number">
+                04
+              </span>
+
+              <h4 class="produto-nome">
+                Cone Kinder Bueno
+              </h4>
+
+              <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener" class="btn-cardapio">
+                Ver cardápio
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+
+
+      <!-- ===================================================
+           BOMBONS
+      ==================================================== -->
+
+      <div class="grupo-produto">
+
+
+        <div class="categoria-heading">
+
+          <span>
+            PEQUENOS PRAZERES
+          </span>
+
+          <h3 class="titulo-grupo">
+            Bombons
+          </h3>
+
+          <p>
+            Delicados por fora, irresistíveis
+            por dentro.
+          </p>
+
+        </div>
+
+
+        <div class="grid-produtos">
+
+
+          <!-- BOMBOM RAFFAELLO -->
+
+          <article class="card">
+
+            <div class="card-image">
+
+              <img src="img/bombom (1).jpeg" alt="Bombom Raffaello em Sorocaba" loading="lazy">
+
+              <div class="card-image-overlay"></div>
+
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-number">
+                01
+              </span>
+
+              <h4 class="produto-nome">
+                Bombom Raffaello
+              </h4>
+
+              <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener" class="btn-cardapio">
+                Ver cardápio
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- BOMBOM FERRERO -->
+
+          <article class="card">
+
+            <div class="card-image">
+
+              <img src="img/bombom (2).jpeg" alt="Bombom Ferrero em Sorocaba" loading="lazy">
+
+              <div class="card-image-overlay"></div>
+
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-number">
+                02
+              </span>
+
+              <h4 class="produto-nome">
+                Bombom Ferrero
+              </h4>
+
+              <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener" class="btn-cardapio">
+                Ver cardápio
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- BOMBOM KINDER -->
+
+          <article class="card">
+
+            <div class="card-image">
+
+              <img src="img/bombom oreo (3).jpg" alt="Bombom Kinder Bueno em Sorocaba" loading="lazy">
+
+              <div class="card-image-overlay"></div>
+
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-number">
+                03
+              </span>
+
+              <h4 class="produto-nome">
+                Bombom Kinder Bueno
+              </h4>
+
+              <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener" class="btn-cardapio">
+                Ver cardápio
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- BOMBOM NUTELLOREO -->
+
+          <article class="card">
+
+            <div class="card-image">
+
+              <img src="img/bombom oreo (4).jpg" alt="Bombom Nutelloreo em Sorocaba" loading="lazy">
+
+              <div class="card-image-overlay"></div>
+
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-number">
+                04
+              </span>
+
+              <h4 class="produto-nome">
+                Bombom Nutelloreo
+              </h4>
+
+              <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener" class="btn-cardapio">
+                Ver cardápio
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+
+
+      <!-- ===================================================
+           DOCES NO POTE
+      ==================================================== -->
+
+      <div class="grupo-produto">
+
+
+        <div class="categoria-heading">
+
+          <span>
+            FEITOS COM CARINHO
+          </span>
+
+          <h3 class="titulo-grupo">
+            Doces no pote
+          </h3>
+
+          <p>
+            Camadas de sabor para aproveitar
+            cada colherada.
+          </p>
+
+        </div>
+
+
+        <div class="grid-produtos">
+
+
+          <!-- BANOFFE -->
+
+          <article class="card">
+
+            <div class="card-image">
+
+              <img src="img/pote (1).jpg" alt="Banoffe no pote em Sorocaba" loading="lazy">
+
+              <div class="card-image-overlay"></div>
+
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-number">
+                01
+              </span>
+
+              <h4 class="produto-nome">
+                Banoffe
+              </h4>
+
+              <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener" class="btn-cardapio">
+                Ver cardápio
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- POTE DOS DESEJOS -->
+
+          <article class="card">
+
+            <div class="card-image">
+
+              <img src="img/pote (2).jpg" alt="Pote dos Desejos Gentille Dame em Sorocaba" loading="lazy">
+
+              <div class="card-image-overlay"></div>
+
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-number">
+                02
+              </span>
+
+              <h4 class="produto-nome">
+                Pote dos Desejos
+              </h4>
+
+              <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener" class="btn-cardapio">
+                Ver cardápio
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- MERENGUE -->
+
+          <article class="card">
+
+            <div class="card-image">
+
+              <img src="img/pote (3).jpg" alt="Merengue no pote em Sorocaba" loading="lazy">
+
+              <div class="card-image-overlay"></div>
+
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-number">
+                03
+              </span>
+
+              <h4 class="produto-nome">
+                Merengue
+              </h4>
+
+              <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener" class="btn-cardapio">
+                Ver cardápio
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- SURPRESA DE UVA -->
+
+          <article class="card">
+
+            <div class="card-image">
+
+              <img src="img/pote (4).jpg" alt="Surpresa de Uva no pote em Sorocaba" loading="lazy">
+
+              <div class="card-image-overlay"></div>
+
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-number">
+                04
+              </span>
+
+              <h4 class="produto-nome">
+                Surpresa de Uva
+              </h4>
+
+              <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener" class="btn-cardapio">
+                Ver cardápio
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CTA DELIVERY
+    ====================================================== -->
+
+    <section class="delivery-section">
+
+      <div class="delivery-inner">
+
+        <span class="delivery-kicker">
+          PARA DEIXAR O SEU DIA MAIS DOCE
+        </span>
+
+        <h2>
+          Seu doce favorito,
+          <br>
+          onde você estiver.
+        </h2>
+
+        <p>
+          Confira nossas opções e faça seu pedido
+          pelo nosso delivery.
+        </p>
+
+        <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener" class="delivery-button">
+          Pedir pelo delivery
+          <span>→</span>
+        </a>
+
+      </div>
+
+    </section>
+
+
+
+  </main>
+
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
   <footer class="footer">
-    <div class="footer-item">
-      <div class="footer-icon">📷</div>
-      <div class="footer-text">
-        <span class="footer-label">Instagram</span>
-        <a href="https://instagram.com/dame.gentille" target="_blank" rel="noopener">@dame.gentille</a><br>
+
+
+    <div class="footer-main">
+
+
+      <!-- MARCA -->
+
+      <div class="footer-brand">
+
+        <img src="img/logo 2.png" alt="Gentille Dame" class="footer-logo">
+
+        <p>
+          Bolos personalizados, doces e sabores
+          especiais para momentos que merecem
+          ser lembrados.
+        </p>
+
       </div>
+
+
+
+      <!-- INSTAGRAM -->
+
+      <div class="footer-item">
+
+        <div class="footer-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2" />
+            <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+          </svg>
+        </div>
+
+        <div class="footer-text">
+
+          <span class="footer-label">
+            Instagram
+          </span>
+
+          <a href="https://instagram.com/dame.gentille" target="_blank" rel="noopener">
+            @dame.gentille
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- CONTATO -->
+
+      <div class="footer-item">
+
+        <div class="footer-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5Z" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linejoin="round" />
+            <path
+              d="M9 8.5c.3-.3.6-.3.9 0l1 1c.2.2.2.5 0 .8l-.5.6c.7 1.1 1.5 1.8 2.6 2.5l.6-.5c.3-.2.6-.2.8 0l1 1c.3.3.3.6 0 .9l-.5.5c-.5.5-1.3.6-2 .3-2.2-.9-4.5-3.2-5.4-5.4-.3-.7-.2-1.5.3-2Z"
+              fill="currentColor" />
+          </svg>
+        </div>
+
+        <div class="footer-text">
+
+          <span class="footer-label">
+            Encomendas
+          </span>
+
+          <a href="https://wa.me/5515996675519" target="_blank" rel="noopener">
+            Fale pelo WhatsApp
+          </a>
+        </div>
+      </div>
+
     </div>
+
+
+
+
+
+    <!-- COPYRIGHT -->
+
     <div class="copyright">
 
-      <a href="https://www.instagram.com/marlon_patrick009/" target="_blank" class="desenvolvido-por">
+
+      <a href="https://www.instagram.com/marlon_patrick009/" target="_blank" rel="noopener" class="desenvolvido-por">
 
         <img src="img/WhatsApp Image 2026-07-09 at 19.48.28.jpeg" alt="MP Tech" class="logo-mp">
 
         <span>
-          © 2026 Gentille Dame. Todos os direitos reservados.<br>
-          Desenvolvido por <strong>MP Tech</strong>
+
+          © <span class="current-year">2026</span>
+          Gentille Dame.
+          Todos os direitos reservados.
+
+          <br>
+
+          Desenvolvido por
+          <strong>
+            MP Tech
+          </strong>
+
         </span>
 
       </a>
 
+
     </div>
+
+
   </footer>
 
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
+
   <script src="js/script.js"></script>
+
+
 </body>
 
 </html>

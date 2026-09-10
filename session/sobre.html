@@ -2,140 +2,509 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sobre a Gentille Dame - Confeitaria em Sorocaba | Bolos Artesanais</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CSS GLOBAL -->
-  <link rel="stylesheet" href="../css/style.css">
+    <title>Sobre a Gentille Dame | Confeitaria em Sorocaba</title>
 
-  <!-- CSS exclusivo da página SOBRE -->
-  <link rel="stylesheet" href="../css/sobre.css">
+    <meta name="description"
+        content="Conheça a história da Gentille Dame, confeitaria artesanal em Sorocaba especializada em bolos personalizados, doces e criações para momentos especiais.">
 
-  <!-- FAVICON (logo na aba) -->
-  <link rel="icon" type="image/png" href="../img/imgdame.png" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sobre.css">
 
-  <!-- Fonte Poppins -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../img/imgdame.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="logo">
-      <a href="../index.html">
-        <img src="../img/logo 2.png" alt="Gentille Dame">
-      </a>
-    </div>
+    <!-- HEADER -->
 
-    <nav class="nav">
-      <!-- LINKS (desktop) -->
-      <ul class="nav-links">
-        <li><a href="bolos.html">Bolos</a></li>
-        <li><a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener">Delivery</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="https://wa.me/5515996675519" target="_blank" rel="noopener">Contato</a></li>
-      </ul>
+    <header class="header">
+
+        <div class="header-inner">
+
+            <a href="../index.html" class="logo">
+
+                <img src="../img/logo 2.png" alt="Gentille Dame Confeitaria">
+
+            </a>
+
+            <nav class="nav">
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="../index.html">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="bolos.html">
+                            Bolos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener">
+                            Delivery
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sobre.html">
+                            Sobre
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://wa.me/5515996675519" target="_blank" rel="noopener">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" type="button">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+                <div class="mobile-menu" id="mobileMenu">
+
+                    <a href="../index.html">Inicio</a>
+
+                    <a href="bolos.html">Bolos</a>
+
+                    <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener">
+                        Delivery
+                    </a>
+
+                    <a href="sobre.html">Sobre</a>
+
+                    <a href="https://wa.me/5515996675519" target="_blank" rel="noopener">
+                        Contato
+                    </a>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
 
 
-      <!-- BOTÃO HAMBURGUER (mobile) -->
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+    <!-- CONTEÚDO -->
 
-      <!-- MENU MOBILE (abre ao clicar) -->
-      <div class="mobile-menu" id="mobileMenu">
-        <a href="bolos.html">Bolos</a>
-        <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener">Delivery</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="https://wa.me/5515996675519" target="_blank" rel="noopener">Contato</a>
-      </div>
+    <main class="sobre-page">
 
-    </nav>
-  </header>
 
-  <main class="sobre-page" id="sobre">
+        <!-- =================================================
+             INTRO
+        ================================================== -->
 
-    <section class="sobre-card-container">
-      <div class="sobre-foto">
-        <img src="../img/nicole perfil.jpg" alt="Foto da equipe">
-      </div>
+        <section class="sobre-intro">
 
-      <div class="sobre-texto">
-        <h2>Nossa História</h2>
+            <div class="sobre-intro-label">
+                GENTILLE DAME
+            </div>
 
-        <p>
-          A Gentille Dame nasceu de um convite simples e de um grande sonho:
-          transformar a confeitaria em uma experiência delicada, elegante e cheia de afeto.
-        </p>
+            <h1>
+                Uma história feita de
+                <em>doçura e dedicação.</em>
+            </h1>
 
-        <p>
-          Quando eu ainda fazia um curso de confeitaria, uma colega me chamou para
-          começarmos a vender doces juntas. Assim nasceu nossa primeira empresa – e foi
-          ali que surgiu o nome <strong>Gentille Dame</strong>, criado por mim com todo carinho.
-          A sociedade mudou, os caminhos se separaram, mas o nome, o propósito e o amor
-          pela confeitaria permaneceram comigo.
-        </p>
+            <p>
+                Por trás de cada criação existe uma história,
+                uma escolha e muitos detalhes pensados para
+                tornar cada momento especial.
+            </p>
 
-        <p>
-          Em busca de aperfeiçoamento, estudei Gastronomia e depois conclui um curso
-          profissional de confeitaria no Senac. Foi nesse período que perdi o medo de
-          fazer bolos grandes, eventos e projetos mais complexos. Desde então, nunca mais
-          parei: cursos, testes, técnicas, receitas e, principalmente, muita dedicação
-          em cada detalhe.
-        </p>
-
-        <p>
-          Hoje, a <strong>Gentille Dame</strong> é a tradução de tudo isso: estudo, coragem,
-          sensibilidade e personalidade em forma de doce. Cada bolo conta uma história,
-          cada detalhe é pensado para encantar e cada encomenda é tratada como única.
-        </p>
-
-        <p>
-          <strong>Bem-vindo à Gentille Dame</strong> – aqui a confeitaria é feita com verdade,
-          elegância e muito amor.
-        </p>
-
-        <section class="sobre-valores">
-          <h2>Nossos Diferenciais</h2>
-          <p> • Usamos apenas produtos da melhor qualidade </p>
-          <p> • Experiência em eventos, casamentos e datas especiais </p>
-          <p> • Estilo próprio, delicado e sofisticado</p>
         </section>
 
-      </div>
-    </section>
 
-  </main>
+        <!-- =================================================
+             HISTÓRIA
+        ================================================== -->
 
-  <!-- FOOTER -->
-   <footer class="footer">
-    <div class="footer-item">
-      <div class="footer-icon">📷</div>
-      <div class="footer-text">
-        <span class="footer-label">Instagram</span>
-        <a href="https://instagram.com/dame.gentille" target="_blank" rel="noopener">@dame.gentille</a>
-      </div>
-    </div>
-    <div class="copyright">
+        <section class="sobre-historia">
 
-      <a href="https://www.instagram.com/marlon_patrick009/" target="_blank" class="desenvolvido-por">
 
-        <img src="../img/WhatsApp Image 2026-07-09 at 19.48.28.jpeg" alt="MP Tech" class="logo-mp">
+            <div class="historia-imagem">
 
-        <span>
-          © 2026 Gentille Dame. Todos os direitos reservados.<br>
-          Desenvolvido por <strong>MP Tech</strong>
-        </span>
+                <div class="imagem-frame">
 
-      </a>
+                    <img src="../img/nicole perfil.jpg" alt="Nicole da Gentille Dame">
 
-    </div>
-  </footer>
+                </div>
 
-  <!-- JS (necessário pro menu hambúrguer funcionar) -->
-  <script src="../js/script.js"></script>
+                <span>
+                    Gentille Dame
+                </span>
+
+            </div>
+
+
+            <div class="historia-conteudo">
+
+                <div class="sobre-label">
+                    NOSSA HISTÓRIA
+                </div>
+
+                <h2>
+                    Onde tudo
+                    começou
+                </h2>
+
+                <div class="sobre-linha"></div>
+
+
+                <p>
+                    A Gentille Dame nasceu de um convite simples
+                    e de um grande sonho: transformar a confeitaria
+                    em uma experiência delicada, elegante e cheia
+                    de afeto.
+                </p>
+
+                <p>
+                    Quando eu ainda fazia um curso de confeitaria,
+                    uma colega me chamou para começarmos a vender
+                    doces juntas. Assim nasceu nossa primeira
+                    empresa — e foi ali que surgiu o nome
+                    <strong>Gentille Dame</strong>, criado por mim
+                    com todo carinho.
+                </p>
+
+                <p>
+                    A sociedade mudou, os caminhos se separaram,
+                    mas o nome, o propósito e o amor pela
+                    confeitaria permaneceram comigo.
+                </p>
+
+                <p>
+                    Em busca de aperfeiçoamento, estudei Gastronomia
+                    e depois concluí um curso profissional de
+                    confeitaria no Senac.
+                </p>
+
+                <p>
+                    Foi nesse período que perdi o medo de fazer
+                    bolos grandes, eventos e projetos mais
+                    complexos. Desde então, nunca mais parei:
+                    cursos, testes, técnicas, receitas e,
+                    principalmente, muita dedicação em cada detalhe.
+                </p>
+
+                <p>
+                    Hoje, a <strong>Gentille Dame</strong> é a
+                    tradução de tudo isso: estudo, coragem,
+                    sensibilidade e personalidade em forma de doce.
+                </p>
+
+                <p>
+                    Cada bolo conta uma história, cada detalhe é
+                    pensado para encantar e cada encomenda é
+                    tratada como única.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             FRASE
+        ================================================== -->
+
+        <section class="sobre-citacao">
+
+            <div class="citacao-linha"></div>
+
+            <p>
+                “Aqui, cada criação nasce para fazer parte
+                de uma história.”
+            </p>
+
+            <div class="citacao-linha"></div>
+
+        </section>
+
+
+        <!-- =================================================
+             DIFERENCIAIS
+        ================================================== -->
+
+        <section class="sobre-diferenciais">
+
+            <div class="diferenciais-topo">
+
+                <div>
+
+                    <span class="sobre-label">
+                        NOSSO JEITO DE FAZER
+                    </span>
+
+                    <h2>
+                        O cuidado está
+                        <em>nos detalhes.</em>
+                    </h2>
+
+                </div>
+
+                <p>
+                    Mais do que criar doces, buscamos entregar
+                    experiências que tenham significado para
+                    quem escolhe a Gentille Dame.
+                </p>
+
+            </div>
+
+
+            <div class="diferenciais-lista">
+
+
+                <div class="diferencial">
+
+                    <span class="diferencial-numero">
+                        01
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Qualidade
+                        </h3>
+
+                        <p>
+                            Utilizamos produtos selecionados
+                            para garantir sabor, textura e
+                            acabamento em cada criação.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="diferencial">
+
+                    <span class="diferencial-numero">
+                        02
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Experiência
+                        </h3>
+
+                        <p>
+                            Experiência em eventos, casamentos,
+                            aniversários e datas que merecem
+                            ser celebradas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="diferencial">
+
+                    <span class="diferencial-numero">
+                        03
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Estilo próprio
+                        </h3>
+
+                        <p>
+                            Uma identidade delicada e sofisticada
+                            que transforma cada ideia em uma
+                            criação única.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             FINAL
+        ================================================== -->
+
+        <section class="sobre-final">
+
+            <span>
+                GENTILLE DAME
+            </span>
+
+            <h2>
+                Feita para estar
+                presente nos seus
+                momentos especiais.
+            </h2>
+
+            <p>
+                Seja para um aniversário, uma celebração
+                ou simplesmente para transformar um dia comum
+                em algo especial.
+            </p>
+
+            <a href="https://wa.me/5515996675519?text=Olá!%20Gostaria%20de%20fazer%20uma%20encomenda." target="_blank"
+                rel="noopener">
+
+                FAZER UMA ENCOMENDA
+
+                <span>→</span>
+
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <img src="../img/logo 2.png" alt="Gentille Dame" class="footer-logo">
+
+                <p>
+                    Bolos personalizados, doces e sabores
+                    especiais para momentos que merecem
+                    ser lembrados.
+                </p>
+
+            </div>
+
+
+            <!-- INSTAGRAM -->
+
+            <div class="footer-item">
+
+                <div class="footer-icon">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+
+                        <rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none" stroke="currentColor"
+                            stroke-width="2" />
+
+                        <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+
+                        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+
+                    </svg>
+
+                </div>
+
+                <div class="footer-text">
+
+                    <span class="footer-label">
+                        Instagram
+                    </span>
+
+                    <a href="https://instagram.com/dame.gentille" target="_blank" rel="noopener">
+
+                        @dame.gentille
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- WHATSAPP -->
+
+            <div class="footer-item">
+
+                <div class="footer-icon">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+
+                        <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5Z" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+
+                        <path
+                            d="M9 8.5c.3-.3.6-.3.9 0l1 1c.2.2.2.5 0 .8l-.5.6c.7 1.1 1.5 1.8 2.6 2.5l.6-.5c.3-.2.6-.2.8 0l1 1c.3.3.3.6 0 .9l-.5.5c-.5.5-1.3.6-2 .3-2.2-.9-4.5-3.2-5.4-5.4-.3-.7-.2-1.5.3-2Z"
+                            fill="currentColor" />
+
+                    </svg>
+
+                </div>
+
+                <div class="footer-text">
+
+                    <span class="footer-label">
+                        Encomendas
+                    </span>
+
+                    <a href="https://wa.me/5515996675519" target="_blank" rel="noopener">
+
+                        Fale pelo WhatsApp
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- COPYRIGHT -->
+
+        <div class="copyright">
+
+            <a href="https://www.instagram.com/marlon_patrick009/" target="_blank" rel="noopener"
+                class="desenvolvido-por">
+
+                <img src="../img/WhatsApp Image 2026-07-09 at 19.48.28.jpeg" alt="MP Tech" class="logo-mp">
+
+                <span>
+                    © 2026 Gentille Dame.
+                    Todos os direitos reservados.
+                    <br>
+                    Desenvolvido por
+                    <strong>MP Tech</strong>
+                </span>
+
+            </a>
+
+        </div>
+
+    </footer>
+
+
+
+
+    <script src="../js/script.js"></script>
+
 </body>
 
 </html>

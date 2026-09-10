@@ -22,33 +22,100 @@
 
 <body>
 
-    <!-- HEADER -->
+    <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
     <header class="header">
-        <div class="logo">
-            <a href="../index.html">
-                <img src="../img/logo 2.png" alt="Gentille Dame">
+
+        <div class="header-inner">
+
+
+            <!-- LOGO -->
+
+            <a href="../index.html" class="logo" aria-label="Gentille Dame - Página inicial">
+
+                <img src="../img/logo 2.png" alt="Gentille Dame Confeitaria">
+
             </a>
+
+
+            <!-- NAVEGAÇÃO -->
+
+            <nav class="nav" aria-label="Navegação principal">
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="../index.html">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="bolos.html">
+                            Bolos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener">
+                            Delivery
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sobre.html">
+                            Sobre
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://wa.me/5515996675519" target="_blank" rel="noopener">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- MENU MOBILE -->
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" type="button">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+
+                <div class="mobile-menu" id="mobileMenu">
+
+                    <a href="../index.html">
+                        Inicio
+                    </a>
+                    <a href="bolos.html">
+                        Bolos
+                    </a>
+
+                    <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener">
+                        Delivery
+                    </a>
+
+                    <a href="sobre.html">
+                        Sobre
+                    </a>
+
+                    <a href="https://wa.me/5515996675519" target="_blank" rel="noopener">
+                        Contato
+                    </a>
+
+                </div>
+
+            </nav>
+
         </div>
 
-        <nav class="nav">
-            <ul class="nav-links">
-                <li><a href="bolos.html">Bolos</a></li>
-                <li><a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener">Delivery</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="https://wa.me/5515996675519" target="_blank" rel="noopener">Contato</a></li>
-            </ul>
-
-            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
-
-            <div class="mobile-menu" id="mobileMenu">
-                <a href="bolos.html">Bolos</a>
-                <a href="https://app.cardapioweb.com/gentille_dame" target="_blank" rel="noopener">Delivery</a>
-                <a href="sobre.html">Sobre</a>
-                <a href="https://wa.me/5515996675519" target="_blank" rel="noopener">Contato</a>
-            </div>
-        </nav>
     </header>
 
     <!-- MAIN -->
@@ -201,37 +268,139 @@
             <div class="cta-center">
                 <a class="btn-cta" href="https://wa.me/5515996675519?text=Quero%20orçamento%20para%20bolo%20artesanal"
                     target="_blank" rel="noopener">
-                    Quero uma experiência doce
+                    Faça já sua Encomenda
                 </a>
             </div>
         </section>
 
     </main>
 
-    <!-- FOOTER -->
-   <footer class="footer">
-    <div class="footer-item">
-      <div class="footer-icon">📷</div>
-      <div class="footer-text">
-        <span class="footer-label">Instagram</span>
-        <a href="https://instagram.com/dame.gentille" target="_blank" rel="noopener">@dame.gentille</a>
-      </div>
-    </div>
-    <div class="copyright">
 
-      <a href="https://www.instagram.com/marlon_patrick009/" target="_blank" class="desenvolvido-por">
+    <!-- =====================================================
+     FOOTER
+====================================================== -->
 
-        <img src="../img/WhatsApp Image 2026-07-09 at 19.48.28.jpeg" alt="MP Tech" class="logo-mp">
+    <footer class="footer">
 
-        <span>
-          © 2026 Gentille Dame. Todos os direitos reservados.<br>
-          Desenvolvido por <strong>MP Tech</strong>
-        </span>
+        <div class="footer-main">
 
-      </a>
+            <!-- MARCA -->
 
-    </div>
-  </footer>
+            <div class="footer-brand">
+
+                <img src="../img/logo 2.png" alt="Gentille Dame" class="footer-logo">
+
+                <p>
+                    Bolos personalizados, doces e sabores
+                    especiais para momentos que merecem
+                    ser lembrados.
+                </p>
+
+            </div>
+
+
+            <!-- INSTAGRAM -->
+
+            <div class="footer-item">
+
+                <div class="footer-icon">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+
+                        <rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none" stroke="currentColor"
+                            stroke-width="2" />
+
+                        <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+
+                        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+
+                    </svg>
+
+                </div>
+
+                <div class="footer-text">
+
+                    <span class="footer-label">
+                        Instagram
+                    </span>
+
+                    <a href="https://instagram.com/dame.gentille" target="_blank" rel="noopener">
+                        @dame.gentille
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- WHATSAPP -->
+
+            <div class="footer-item">
+
+                <div class="footer-icon">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+
+                        <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5Z" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+
+                        <path
+                            d="M9 8.5c.3-.3.6-.3.9 0l1 1c.2.2.2.5 0 .8l-.5.6c.7 1.1 1.5 1.8 2.6 2.5l.6-.5c.3-.2.6-.2.8 0l1 1c.3.3.3.6 0 .9l-.5.5c-.5.5-1.3.6-2 .3-2.2-.9-4.5-3.2-5.4-5.4-.3-.7-.2-1.5.3-2Z"
+                            fill="currentColor" />
+
+                    </svg>
+
+                </div>
+
+                <div class="footer-text">
+
+                    <span class="footer-label">
+                        Encomendas
+                    </span>
+
+                    <a href="https://wa.me/5515996675519" target="_blank" rel="noopener">
+                        Fale pelo WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- COPYRIGHT -->
+
+        <div class="copyright">
+
+            <a href="https://www.instagram.com/marlon_patrick009/" target="_blank" rel="noopener"
+                class="desenvolvido-por">
+
+                <img src="../img/WhatsApp Image 2026-07-09 at 19.48.28.jpeg" alt="MP Tech" class="logo-mp">
+
+                <span>
+
+                    © <span class="current-year">2026</span>
+                    Gentille Dame.
+                    Todos os direitos reservados.
+
+                    <br>
+
+                    Desenvolvido por
+                    <strong>
+                        MP Tech
+                    </strong>
+
+                </span>
+
+            </a>
+
+        </div>
+
+    </footer>
+
+
+
 
     <!-- JS -->
     <script src="../js/script.js"></script>

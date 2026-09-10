@@ -1,239 +1,1348 @@
-/* ================== CONTAINER DA PÁGINA ================== */
+/* =========================================================
+   GENTILLE DAME
+   SOBRE.CSS
+   Estilo editorial / confeitaria premium
+   ========================================================= */
+
+
+/* =========================================================
+   PÁGINA
+   ========================================================= */
+
 .sobre-page {
-  padding: 40px 20px 60px;
+
+    width: min(1240px, 90%);
+
+    margin: 0 auto;
+
+    padding: 80px 0 120px;
+
+    color: #3d2c30;
+
 }
 
-/* ================== HERO ================== */
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
 .sobre-hero {
-  max-width: 900px;
-  margin: 40px auto 60px;
-  text-align: center;
-  background: linear-gradient(135deg, #ffe0d6, #ffd6ea);
-  padding: 32px 24px;
-  border-radius: 20px;
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+
+    position: relative;
+
+    min-height: 520px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 70px 30px;
+
+    margin-bottom: 150px;
+
+    text-align: center;
+
+    background: #faf6f2;
+
+    border-top: 1px solid rgba(183, 154, 104, .25);
+
+    border-bottom: 1px solid rgba(183, 154, 104, .25);
+
 }
+
+
+/* pequeno detalhe lateral */
+
+.sobre-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 35px;
+
+    width: 1px;
+
+    height: 90px;
+
+    background: #b79a68;
+
+    transform: translateY(-50%);
+
+}
+
+
+/* detalhe direito */
+
+.sobre-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+
+    right: 35px;
+
+    width: 1px;
+
+    height: 90px;
+
+    background: #b79a68;
+
+    transform: translateY(-50%);
+
+}
+
+
+/* =========================================================
+   HERO OVERLINE
+   ========================================================= */
+
+.sobre-overline {
+
+    margin-bottom: 25px;
+
+    color: #b79a68;
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: .42em;
+
+    text-transform: uppercase;
+
+}
+
+
+/* =========================================================
+   HERO TÍTULO
+   ========================================================= */
 
 .sobre-hero h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
-  color: #4b2e2e;
+
+    max-width: 900px;
+
+    margin: 0;
+
+    color: #3d2c30;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(60px, 8vw, 100px);
+
+    font-weight: 400;
+
+    line-height: .84;
+
+    letter-spacing: -.035em;
+
 }
+
+
+/* segunda linha */
+
+.sobre-hero h1 span {
+
+    display: block;
+
+    margin-top: 8px;
+
+    color: #c85a7c;
+
+    font-style: italic;
+
+}
+
+
+/* =========================================================
+   HERO LINHA
+   ========================================================= */
+
+.sobre-hero h1::after {
+
+    content: "";
+
+    display: block;
+
+    width: 45px;
+
+    height: 1px;
+
+    margin: 35px auto 0;
+
+    background: #b79a68;
+
+}
+
+
+/* =========================================================
+   HERO TEXTO
+   ========================================================= */
 
 .sobre-hero p {
-  font-size: 16px;
-  color: #6b4a4a;
-  max-width: 700px;
-  margin: auto;
+
+    max-width: 520px;
+
+    margin: 27px auto 0;
+
+    color: #665358;
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 300;
+
+    line-height: 1.9;
+
 }
 
-/* ================== FOTO + TEXTO ================== */
-.sobre-card-container {
-  max-width: 1100px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  background: #fff5ec;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-  margin-bottom: 60px;
+
+/* =========================================================
+   HISTÓRIA
+   ========================================================= */
+
+.sobre-historia {
+
+    display: grid;
+
+    grid-template-columns:
+        48% 42%;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 170px;
+
 }
 
-/* FOTO */
+
+/* =========================================================
+   FOTO
+   ========================================================= */
+
 .sobre-foto {
-  flex: 1 1 260px;
-  display: flex;
-  justify-content: center;
+
+    position: relative;
+
 }
 
-.sobre-foto img {
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 6px solid #ffd28f;
-  box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+
+/* moldura */
+
+.foto-moldura {
+
+    position: relative;
+
+    padding: 0;
+
 }
 
-/* TEXTO */
+
+/* linha externa deslocada */
+
+.foto-moldura::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 24px;
+
+    left: 24px;
+
+    width: 100%;
+
+    height: 100%;
+
+    border: 1px solid #b79a68;
+
+    pointer-events: none;
+
+    z-index: 0;
+
+}
+
+
+/* imagem */
+
+.foto-moldura img {
+
+    position: relative;
+
+    z-index: 1;
+
+    display: block;
+
+    width: 100%;
+
+    height: 680px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+}
+
+
+/* legenda */
+
+.foto-legenda {
+
+    display: block;
+
+    margin-top: 28px;
+
+    color: #b79a68;
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: .35em;
+
+    text-transform: uppercase;
+
+}
+
+
+/* =========================================================
+   TEXTO HISTÓRIA
+   ========================================================= */
+
 .sobre-texto {
-  flex: 2 1 320px;
+
+    max-width: 520px;
+
+    padding-top: 15px;
+
 }
+
+
+.secao-overline {
+
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #c85a7c;
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: .35em;
+
+    text-transform: uppercase;
+
+}
+
+
+/* título */
 
 .sobre-texto h2 {
-  font-size: 26px;
-  margin-bottom: 12px;
-  color: #4b2e2e;
+
+    max-width: 450px;
+
+    margin: 0;
+
+    color: #3d2c30;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(52px, 5vw, 72px);
+
+    font-weight: 400;
+
+    line-height: .88;
+
+    letter-spacing: -.025em;
+
 }
+
+
+/* linha */
+
+.linha-dourada {
+
+    width: 45px;
+
+    height: 1px;
+
+    margin: 30px 0 35px;
+
+    background: #b79a68;
+
+}
+
+
+/* parágrafos */
 
 .sobre-texto p {
-  font-size: 15px;
-  margin-bottom: 10px;
-  color: #6b4a4a;
-  line-height: 1.6;
+
+    margin: 0 0 21px;
+
+    color: #665358;
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 300;
+
+    line-height: 2;
+
 }
 
-/* ================== DIFERENCIAIS ================== */
-.sobre-valores {
-  margin-top: 30px;
+
+/* destaque */
+
+.sobre-texto strong {
+
+    color: #3d2c30;
+
+    font-weight: 600;
+
 }
 
-.sobre-valores h2 {
-  font-size: 24px;
-  margin-bottom: 14px;
-  color: #4b2e2e;
-}
 
-.sobre-valores p {
-  font-size: 15px;
-  color: #6b4a4a;
-  line-height: 1.6;
-}
+/* =========================================================
+   FRASE CENTRAL
+   ========================================================= */
 
-/* ================== RESPONSIVO ================== */
-@media (max-width: 768px) {
+.sobre-frase {
 
-  /* respiro extra por causa do header fixo */
-  .sobre-page {
-    padding-top: 30px;
-  }
-
-  .sobre-hero {
-    margin: 20px auto 40px;
-    padding: 24px 18px;
-  }
-
-  .sobre-hero h1 {
-    font-size: 26px;
-  }
-
-  .sobre-card-container {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    gap: 24px;
-  }
-
-  .sobre-foto img {
-    width: 220px;
-    height: 220px;
-  }
-
-  .sobre-texto h2 {
-    font-size: 22px;
-  }
-
-  .sobre-texto p {
-    font-size: 14px;
-  }
-
-  .sobre-valores h2 {
-    font-size: 22px;
-  }
-}
-
-.copyright {
-    border-top: 1px solid #000;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    text-align: center;
-    color: #000;
-    font-size: 14px;
-}
-footer {
-    background: #111;
-    color: #fff;
-    padding-top: 60px;
-}
-
-.footer-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 60px;
-    padding-bottom: 50px;
-}
-
-footer h3 {
-    margin-bottom: 20px;
-    color: #d30c37;
-}
-
-footer p {
-    margin-bottom: 20px;
-    line-height: 1.8;
-}
-
-footer iframe {
     width: 100%;
-    height: 250px;
+
+    margin-bottom: 170px;
+
+    padding: 110px 30px;
+
+    text-align: center;
+
+    background: #3d2c30;
+
+}
+
+
+/* título */
+
+.sobre-frase h2 {
+
+    max-width: 850px;
+
+    margin: 25px auto 0;
+
+    color: #fff;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(45px, 6vw, 70px);
+
+    font-weight: 400;
+
+    line-height: .95;
+
+    letter-spacing: -.02em;
+
+}
+
+
+/* pequena legenda */
+
+.sobre-frase span {
+
+    display: block;
+
+    color: #d9c49c;
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: .38em;
+
+    text-transform: uppercase;
+
+}
+
+
+/* =========================================================
+   DIFERENCIAIS
+   ========================================================= */
+
+.sobre-diferenciais {
+
+    margin-bottom: 170px;
+
+}
+
+
+/* introdução */
+
+.diferenciais-intro {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: end;
+
+    gap: 50px;
+
+    margin-bottom: 75px;
+
+}
+
+
+.diferenciais-intro h2 {
+
+    margin: 0;
+
+    color: #3d2c30;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(55px, 6vw, 78px);
+
+    font-weight: 400;
+
+    line-height: .85;
+
+    letter-spacing: -.03em;
+
+}
+
+
+.diferenciais-intro h2 span {
+
+    color: #c85a7c;
+
+    font-style: italic;
+
+}
+
+
+.diferenciais-intro p {
+
+    max-width: 420px;
+
+    margin: 0;
+
+    color: #665358;
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 300;
+
+    line-height: 1.9;
+
+}
+
+
+/* =========================================================
+   LISTA DOS DIFERENCIAIS
+   ========================================================= */
+
+.diferenciais-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    border-top: 1px solid rgba(61, 44, 48, .18);
+
+    border-bottom: 1px solid rgba(61, 44, 48, .18);
+
+}
+
+
+/* item */
+
+.diferencial {
+
+    position: relative;
+
+    min-height: 300px;
+
+    padding: 45px 35px 50px;
+
+    background: transparent;
+
     border: none;
-    border-radius: 12px;
-}
 
-.whatsapp {
-    color: #ffa08e;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    transition: 0.3s;
-}
+    box-shadow: none;
 
-.whatsapp:hover {
-    color: #d30c37;
+    transition:
+        background .4s ease;
+
 }
 
 
+/* separadores */
 
-.desenvolvido-por {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    text-decoration: none;
-    color: #000;
-    transition: 0.3s;
+.diferencial+.diferencial {
+
+    border-left:
+        1px solid rgba(61, 44, 48, .18);
+
 }
 
-.desenvolvido-por:hover {
-    transform: translateY(-2px);
+
+/* hover */
+
+.diferencial:hover {
+
+    background: #faf6f2;
+
+    transform: none;
+
+    box-shadow: none;
+
 }
 
-.desenvolvido-por strong {
-    color: #ffffff;
-    transition: 0.3s;
+
+/* número */
+
+.numero {
+
+    display: block;
+
+    margin-bottom: 55px;
+
+    color: #b79a68;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size: 18px;
+
 }
 
-.desenvolvido-por:hover strong {
-    color: #d30c37;
+
+/* ícone */
+
+.icone {
+
+    margin-bottom: 20px;
+
+    color: #c85a7c;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size: 27px;
+
 }
 
-.logo-mp {
-    width: 42px;
-    height: 42px;
+
+/* título */
+
+.diferencial h3 {
+
+    margin: 0 0 13px;
+
+    color: #3d2c30;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size: 35px;
+
+    font-weight: 500;
+
+}
+
+
+/* texto */
+
+.diferencial p {
+
+    max-width: 290px;
+
+    margin: 0;
+
+    color: #665358;
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 300;
+
+    line-height: 1.9;
+
+}
+
+
+/* =========================================================
+   FINAL
+   ========================================================= */
+
+.sobre-final {
+
+    position: relative;
+
+    padding: 120px 30px;
+
+    text-align: center;
+
+    background: #f8e7eb;
+
+    overflow: hidden;
+
+}
+
+
+/* círculo */
+
+.sobre-final::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -260px;
+
+    left: 50%;
+
+    width: 520px;
+
+    height: 520px;
+
+    border: 1px solid rgba(183, 154, 104, .25);
+
     border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #d30c37;
-    transition: 0.3s;
+
+    transform: translateX(-50%);
+
 }
 
-.desenvolvido-por:hover .logo-mp {
-    border-color: #ffa08e;
-    transform: scale(1.08);
+
+/* pequena linha */
+
+.sobre-final>span {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: block;
+
+    margin-bottom: 22px;
+
+    color: #b79a68;
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: .4em;
+
+    text-transform: uppercase;
+
 }
 
-@media (max-width: 768px) {
-    .footer-grid {
-        grid-template-columns: 1fr;
+
+/* título */
+
+.sobre-final h2 {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    color: #3d2c30;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(50px, 6vw, 78px);
+
+    font-weight: 400;
+
+    line-height: .9;
+
+    letter-spacing: -.03em;
+
+}
+
+
+/* texto */
+
+.sobre-final p {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 530px;
+
+    margin: 30px auto 35px;
+
+    color: #665358;
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 300;
+
+    line-height: 1.9;
+
+}
+
+
+/* =========================================================
+   BOTÃO
+   ========================================================= */
+
+.sobre-btn {
+
+    position: relative;
+
+    z-index: 3;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    padding: 16px 30px;
+
+    background: #3d2c30;
+
+    border: 1px solid #3d2c30;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: .25em;
+
+    transition:
+        .35s ease;
+
+}
+
+
+.sobre-btn span {
+
+    font-size: 16px;
+
+    transition:
+        transform .35s ease;
+
+}
+
+
+.sobre-btn:hover {
+
+    background: transparent;
+
+    color: #3d2c30;
+
+    border-color: #b79a68;
+
+}
+
+
+.sobre-btn:hover span {
+
+    transform:
+        translateX(5px);
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .sobre-page {
+
+        width: 92%;
+
     }
 
-    .desenvolvido-por {
+
+    .sobre-historia {
+
+        grid-template-columns:
+            46% 48%;
+
+        gap: 30px;
+
+    }
+
+
+    .foto-moldura img {
+
+        height: 580px;
+
+    }
+
+
+    .diferenciais-intro {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 25px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .sobre-page {
+
+        width: 92%;
+
+        padding:
+            45px 0 70px;
+
+    }
+
+
+    /* HERO */
+
+    .sobre-hero {
+
+        min-height: 500px;
+
+        padding:
+            60px 20px;
+
+        margin-bottom:
+            90px;
+
+    }
+
+
+    .sobre-hero::before {
+
+        left: 18px;
+
+        height: 65px;
+
+    }
+
+
+    .sobre-hero::after {
+
+        right: 18px;
+
+        height: 65px;
+
+    }
+
+
+    .sobre-overline {
+
+        font-size: 8px;
+
+        letter-spacing: .3em;
+
+    }
+
+
+    .sobre-hero h1 {
+
+        font-size:
+            clamp(50px, 14vw, 65px);
+
+    }
+
+
+    .sobre-hero p {
+
+        font-size: 11px;
+
+        line-height: 1.8;
+
+    }
+
+
+    /* HISTÓRIA */
+
+    .sobre-historia {
+
+        display: flex;
+
         flex-direction: column;
-        text-align: center;
-        gap: 10px;
+
+        gap: 65px;
+
+        margin-bottom:
+            100px;
+
     }
+
+
+    .sobre-foto {
+
+        width: 88%;
+
+        margin: 0 auto;
+
+    }
+
+
+    .foto-moldura::before {
+
+        top: 15px;
+
+        left: 15px;
+
+    }
+
+
+    .foto-moldura img {
+
+        height:
+            500px;
+
+    }
+
+
+    .sobre-texto {
+
+        max-width: none;
+
+    }
+
+
+    .sobre-texto h2 {
+
+        font-size:
+            55px;
+
+    }
+
+
+    .sobre-texto p {
+
+        font-size:
+            12px;
+
+    }
+
+
+    /* FRASE */
+
+    .sobre-frase {
+
+        margin-bottom:
+            100px;
+
+        padding:
+            80px 20px;
+
+    }
+
+
+    .sobre-frase h2 {
+
+        font-size:
+            43px;
+
+    }
+
+
+    /* DIFERENCIAIS */
+
+    .sobre-diferenciais {
+
+        margin-bottom:
+            100px;
+
+    }
+
+
+    .diferenciais-intro {
+
+        margin-bottom:
+            45px;
+
+    }
+
+
+    .diferenciais-intro h2 {
+
+        font-size:
+            57px;
+
+    }
+
+
+    .diferenciais-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .diferencial {
+
+        min-height:
+            auto;
+
+        padding:
+            35px 25px 40px;
+
+    }
+
+
+    .diferencial+.diferencial {
+
+        border-left: none;
+
+        border-top:
+            1px solid rgba(61, 44, 48, .18);
+
+    }
+
+
+    .numero {
+
+        margin-bottom:
+            30px;
+
+    }
+
+
+    /* FINAL */
+
+    .sobre-final {
+
+        padding:
+            85px 20px;
+
+    }
+
+
+    .sobre-final h2 {
+
+        font-size:
+            52px;
+
+    }
+
+
+    .sobre-final p {
+
+        font-size:
+            11px;
+
+    }
+
+
+    .sobre-btn {
+
+        width: 100%;
+
+        max-width: 300px;
+
+    }
+
+}
+
+
+/* =========================================================
+   CELULARES PEQUENOS
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .sobre-page {
+
+        width: 94%;
+
+    }
+
+
+    .sobre-hero {
+
+        min-height:
+            450px;
+
+    }
+
+
+    .sobre-hero h1 {
+
+        font-size:
+            45px;
+
+    }
+
+
+    .sobre-historia {
+
+        gap:
+            50px;
+
+    }
+
+
+    .sobre-foto {
+
+        width: 92%;
+
+    }
+
+
+    .foto-moldura img {
+
+        height:
+            430px;
+
+    }
+
+
+    .sobre-texto h2 {
+
+        font-size:
+            47px;
+
+    }
+
+
+    .sobre-frase h2 {
+
+        font-size:
+            37px;
+
+    }
+
+
+    .diferenciais-intro h2 {
+
+        font-size:
+            48px;
+
+    }
+
+
+    .sobre-final h2 {
+
+        font-size:
+            44px;
+
+    }
+
+}
+
+
+/* =========================================================
+   ACESSIBILIDADE
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .diferencial,
+    .sobre-btn {
+
+        transition: none !important;
+
+    }
+
+}
+
+.footer-icon svg {
+    width: 24px;
+    height: 24px;
+    display: block;
 }
